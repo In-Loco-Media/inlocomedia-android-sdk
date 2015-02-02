@@ -9,9 +9,7 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:21.+'
 
     //*
-    compile (project(":inlocomedia-android-sdk")) {
-        transitive = true
-    }
+    compile project(":inlocomedia-android-sdk")
     /*/
     compile 'com.inlocomedia.android:android-sdk:1.7.0-SNAPSHOT'
     //*/
