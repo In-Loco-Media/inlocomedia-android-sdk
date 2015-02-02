@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.ubee.ads.example"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name=".activities.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="in.ubee.ads.example.activities.NativeAdActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="in.ubee.ads.example.activities.DisplayAdsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="in.ubee.ads.example.activities.AdViewUsingXmlActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="in.ubee.ads.example.activities.InterstitialAdActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="in.ubee.ads.example.activities.AdFeedActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".activities.CategoriesActivity" >
+        </activity>
+        <activity
+            android:name="in.ubee.ads.example.activities.NotificationActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <!--
+                    <data
+                    android:host="inlocomedia.com"
+                    android:scheme="ubee" />
+                -->
+
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="in.ubee.api.location.LocationService"
+            android:exported="false" />
+
+        <activity
+            android:name="in.ubee.api.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@style/Theme.UBAdActivity" />
+
+        <receiver
+            android:name="in.ubee.api.ads.AdReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Mediation -->
+
+        <activity android:name="in.ubee.ads.example.activities.AdMobDisplayAdsMediationActivity" >
+        </activity>
+        <activity android:name="in.ubee.ads.example.activities.AdMobInterstitialAdsMediationActivity" >
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

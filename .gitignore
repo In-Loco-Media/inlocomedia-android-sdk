@@ -1,0 +1,23 @@
+bin/
+gen/
+doc/
+
+lint.xml
+
+local.properties
+
+## OSX Folder File ##
+.DS_Store
+
+# Gradle Files
+.gradle
+build/
+
+/taskArtifacts
+lint-report.html
+lint-report_files/
+
+# Proguard Files
+proguard/mapping.txt
+.idea
+*.iml
