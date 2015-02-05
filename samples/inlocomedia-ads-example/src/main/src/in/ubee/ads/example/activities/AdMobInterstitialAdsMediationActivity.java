@@ -2,7 +2,7 @@ package in.ubee.ads.example.activities;
 
 import in.ubee.ads.example.R;
 import in.ubee.ads.example.activities.util.BaseActivity;
-import in.ubee.ads.example.mediation.AdMob;
+
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -29,7 +29,7 @@ public class AdMobInterstitialAdsMediationActivity extends BaseActivity {
                 textView.setText("Requesting Interstitial...");
 
                 final InterstitialAd iAd = new InterstitialAd(AdMobInterstitialAdsMediationActivity.this);
-                iAd.setAdUnitId(AdMob.INTERSTITIAL_AD_UNIT);
+                iAd.setAdUnitId(getString(R.string.ad_mob_interstitial_ad_unit));
                 iAd.setAdListener(new AdListener() {
 
                     @Override
