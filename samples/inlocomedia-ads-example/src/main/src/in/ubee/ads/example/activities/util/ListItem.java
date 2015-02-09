@@ -1,8 +1,8 @@
 package in.ubee.ads.example.activities.util;
 
-import in.ubee.api.ads.AdType;
-
 import java.io.Serializable;
+
+import in.ubee.api.ads.AdType;
 
 public class ListItem implements Serializable {
 

@@ -1,7 +1,5 @@
 package in.ubee.ads.example.activities.util;
 
-import in.ubee.ads.example.R;
-import in.ubee.ads.example.activities.CategoriesActivity;
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.content.Intent;
@@ -11,6 +9,9 @@ import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
+import in.ubee.ads.example.R;
+import in.ubee.ads.example.activities.CategoriesActivity;
 
 public class BaseActivity extends FragmentActivity {
 
