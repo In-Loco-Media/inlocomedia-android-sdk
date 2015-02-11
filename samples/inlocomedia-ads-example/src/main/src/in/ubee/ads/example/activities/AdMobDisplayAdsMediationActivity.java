@@ -1,8 +1,5 @@
 package in.ubee.ads.example.activities;
 
-import in.ubee.ads.example.R;
-import in.ubee.ads.example.activities.util.BaseActivity;
-import in.ubee.ads.example.mediation.AdMob;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -14,16 +11,10 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 
+import in.ubee.ads.example.R;
+import in.ubee.ads.example.activities.util.BaseActivity;
+
 public class AdMobDisplayAdsMediationActivity extends BaseActivity {
-
-    public static final String DISPLAY_TYPE_KEY = "bundle_key";
-
-    public static final int DISPLAY_BANNER_SMALL = 10;
-    public static final int DISPLAY_BANNER_LARGE = 20;
-    public static final int DISPLAY_FULL_SCREEN = 30;
-    public static final int DISPLAY_TILE = 40;
-    public static final int DISPLAY_SMART_BANNER = 50;
-    public static final int DISPLAY_BANNER_FULL_IAB = 60;
 
     private com.google.android.gms.ads.AdView mAdView;
 
@@ -36,8 +27,8 @@ public class AdMobDisplayAdsMediationActivity extends BaseActivity {
 
         mAdView = new com.google.android.gms.ads.AdView(this);
         mAdView.setAdSize(AdSize.BANNER);
-        mAdView.setAdUnitId(AdMob.BANNER_AD_UNIT);
-        
+        mAdView.setAdUnitId(getString(R.string.ad_mob_banner_ad_unit));
+
         mAdView.setAdListener(new AdListener() {
             @Override
             public void onAdLoaded() {
