@@ -35,6 +35,8 @@ public class AdViewUsingXmlActivity extends BaseActivity {
                 adView.setVisibility(View.INVISIBLE);
             }
         });
+
+        adView.loadAd();
     }
 
 }

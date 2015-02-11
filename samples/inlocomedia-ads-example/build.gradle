@@ -19,6 +19,11 @@ android {
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
 
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 21
+    }
+
     sourceSets {
         main {
             manifest.srcFile 'src/main/AndroidManifest.xml'
