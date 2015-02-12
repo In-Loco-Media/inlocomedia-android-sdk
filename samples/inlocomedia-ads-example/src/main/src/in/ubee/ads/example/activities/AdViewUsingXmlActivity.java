@@ -10,14 +10,15 @@ import android.view.View;
 import android.widget.TextView;
 
 public class AdViewUsingXmlActivity extends BaseActivity {
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ad_view_using_xml);
-        
+
+
         AdView adView = (AdView) findViewById(R.id.ad);
-        
+
         adView.setAdListener(new AdViewListener() {
             @Override
             public void onAdViewReady(AdView adView) {
