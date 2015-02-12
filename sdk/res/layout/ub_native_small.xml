@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/ub_margin" 
+    android:paddingRight="@dimen/ub_margin" 
+    android:paddingTop="@dimen/ub_margin_small" 
+    android:paddingBottom="@dimen/ub_margin_small" >
+
+    <in.ubee.api.ui.views.WebImageView
+        android:id="@id/ub_image"
+        android:layout_width="@dimen/ub_icon_small"
+        android:layout_height="@dimen/ub_icon_small"
+        android:contentDescription="@string/ub_icon"
+        android:src="@drawable/ub_native_ad_small_icon_placeholder" />
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/ub_margin"
+        android:layout_marginRight="@dimen/ub_margin"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <in.ubee.api.ui.views.TypefacedTextView
+            android:id="@id/ub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/ub_title" />
+
+        <in.ubee.api.ui.views.TypefacedTextView
+            android:id="@id/ub_highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+             android:layout_alignParentLeft="true"
+            android:layout_below="@id/ub_title"
+            android:singleLine="true"
+            android:text="@string/ub_highlight" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@id/ub_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ub_button_height"
+        android:padding="5dip"
+        android:text="@string/ub_text_button" />
+
+</LinearLayout><!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/layout/ub_native_small.xml -->

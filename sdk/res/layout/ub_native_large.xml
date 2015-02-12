@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/ub_margin" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <in.ubee.api.ui.views.WebImageView
+            android:id="@id/ub_icon"
+            android:layout_width="@dimen/ub_icon_small"
+            android:layout_height="@dimen/ub_icon_small"
+            android:src="@drawable/ub_native_ad_large_icon_placeholder" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/ub_margin"
+            android:layout_marginRight="@dimen/ub_margin"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <in.ubee.api.ui.views.TypefacedTextView
+                android:id="@id/ub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/ub_title" />
+
+            <in.ubee.api.ui.views.TypefacedTextView
+                android:id="@id/ub_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:text="@string/ub_highlight" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <in.ubee.api.ui.views.TypefacedTextView
+        android:id="@id/ub_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ub_margin_small"
+        android:layout_marginTop="@dimen/ub_margin_small"
+        android:text="@string/ub_description" />
+
+    <in.ubee.api.ui.views.WebImageView
+        android:id="@id/ub_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:minHeight="150dip" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1F1F2"
+        android:gravity="center_vertical"
+        android:padding="@dimen/ub_margin_small" >
+
+        <Button
+            android:id="@id/ub_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ub_button_height"
+            android:layout_gravity="end"
+            android:padding="5dip"
+            android:text="@string/ub_text_button" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:background="#D1D2D4" />
+
+</LinearLayout><!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/layout/ub_native_large.xml -->

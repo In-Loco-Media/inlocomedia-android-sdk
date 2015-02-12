@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="ub_black_translucid">#C000</color>
+    <color name="ub_gray_background">#F9F9F9</color>
+    <color name="ub_gray_ballon">#1D272F</color>
+    <color name="ub_gray_dark">#A6A6A6</color>
+    <color name="ub_gray_foreground">#F1F1F1</color>
+    <color name="ub_green_highlight">#39B753</color>
+    <color name="ub_native_button_focused">#009344</color>
+    <color name="ub_native_button_normal">#FFF</color>
+    <color name="ub_native_button_pressed">#006738</color>
+    <declare-styleable name="IndoorMapView"><attr format="reference" name="ubStoreColor"/><attr format="reference" name="ubHighlightColor"/><attr format="reference" name="ubTextColor"/><attr format="reference" name="ubRouteColor"/><attr format="color" name="ubHallColor"/><attr format="reference" name="ubBalloonLayout"/><attr format="reference" name="ubCloseButton"/></declare-styleable>
+    <declare-styleable name="WebImageView"><attr format="enum" name="ubScaleType"><enum name="fullWidth" value="0"/><enum name="fullHeight" value="1"/></attr></declare-styleable>
+    <declare-styleable name="ubAdContentView"><attr format="enum" name="ubAdType"><enum name="display_smart_banner" value="0"/><enum name="native_small" value="100"/><enum name="native_large" value="101"/><enum name="native_offer" value="102"/><enum name="display_banner_small" value="200"/><enum name="display_banner_small_landscape" value="201"/><enum name="display_banner_large" value="202"/><enum name="display_banner_full_iab" value="203"/><enum name="display_banner_medium_rectangle" value="204"/><enum name="display_banner_tablet" value="205"/><enum name="display_tile" value="206"/><enum name="display_fullscreen" value="300"/><enum name="display_fullscreen_landscape" value="301"/><enum name="display_fullscreen_tablet" value="302"/><enum name="display_fullscreen_tablet_landscape" value="303"/></attr><attr format="integer" name="ubCloseButtonGravity"/><attr format="dimension" name="ubCloseButtonPadding"/><attr format="reference" name="ubTitleTextStyle"/><attr format="reference" name="ubDescriptionTextStyle"/><attr format="reference" name="ubHighlightTextStyle"/><attr format="reference" name="ubButtonTextStyle"/><attr format="reference" name="ubOfferTextStyle"/><attr format="reference" name="ubExpirationTextStyle"/><attr format="reference|color" name="ubBackgroundButton"/></declare-styleable>
+    <declare-styleable name="ubAdView"><attr format="boolean" name="ubLoadOnAttach"/><attr format="integer|enum" name="ubAutoRefreshInterval"><enum name="disabled" value="0"/><enum name="default_interval" value="60"/><enum name="min_interval" value="30"/><enum name="max_interval" value="120"/></attr><attr format="integer|enum" name="ubTimeout"><enum name="default_timeout" value="20"/><enum name="min_timeout" value="3"/></attr></declare-styleable>
+    <declare-styleable name="ubTypefacedTextView"><attr format="string" name="ubTypeface"/></declare-styleable>
+    <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="ub_button_height">30dip</dimen>
+    <dimen name="ub_icon_big">64dip</dimen>
+    <dimen name="ub_icon_small">48dip</dimen>
+    <dimen name="ub_margin">10dip</dimen>
+    <dimen name="ub_margin_large">16dip</dimen>
+    <dimen name="ub_margin_small">6dip</dimen>
+    <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="ub_button" type="id"/>
+    <item name="ub_description" type="id"/>
+    <item name="ub_expiration" type="id"/>
+    <item name="ub_highlight" type="id"/>
+    <item name="ub_icon" type="id"/>
+    <item name="ub_image" type="id"/>
+    <item name="ub_offer" type="id"/>
+    <item name="ub_title" type="id"/>
+    <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="ub_description">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor in</string>
+    <string name="ub_error_different_floors">"You are in %1$s. Go to %2$s and trace the route again."</string>
+    <string name="ub_error_graph_not_found">"Route not available."</string>
+    <string name="ub_expiration">Enquanto durarem os estoques.</string>
+    <string name="ub_goal_reached">"You have reached your destination."</string>
+    <string name="ub_highlight">Highlight Text</string>
+    <string name="ub_icon">icon</string>
+    <string name="ub_offer">De <small>R$100,00</small> por <big><b>R$200,00</b></big></string>
+    <string name="ub_text_button">Install</string>
+    <string name="ub_title">Lorem ipsum dollor</string>
+    <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="android:Theme.Light">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="MyActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#808080</item>
+    </style>
+    <style name="Theme.UBAdActivity" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+    <style name="Theme.UBAdActivity.ActionBar" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:actionBarStyle">@style/UBActionBar.ActionBar</item>
+    </style>
+    <style name="UBActionBar.ActionBar" parent="@android:style/Widget.DeviceDefault.ActionBar">
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="android:background">#FAFAFA</item>
+        <item name="android:logo">@drawable/ub_logo_webview_actionbar</item>
+        <item name="android:icon">@drawable/ub_logo_webview_actionbar</item>
+    </style>
+    <style name="UBNativeAd" parent="@android:style/Widget">
+        <item name="ubTitleTextStyle">@style/UBNativeAd.Title</item>
+        <item name="ubDescriptionTextStyle">@style/UBNativeAd.Description</item>
+        <item name="ubHighlightTextStyle">@style/UBNativeAd.Highlight</item>
+        <item name="ubButtonTextStyle">@style/UBNativeAd.ButtonText</item>
+        <item name="ubOfferTextStyle">@style/UBNativeAd.Offer</item>
+        <item name="ubExpirationTextStyle">@style/UBNativeAd.Expiration</item>
+        <item name="ubBackgroundButton">@drawable/ub_background_button</item>
+    </style>
+    <style name="UBNativeAd.ButtonText" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/ub_native_button</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="UBNativeAd.Description" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/ub_gray_dark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="UBNativeAd.Expiration" parent="@android:style/Widget.TextView">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/ub_gray_dark</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="UBNativeAd.Highlight" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ub_green_highlight</item>
+    </style>
+    <style name="UBNativeAd.Offer" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/ub_green_highlight</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="UBNativeAd.Title" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
