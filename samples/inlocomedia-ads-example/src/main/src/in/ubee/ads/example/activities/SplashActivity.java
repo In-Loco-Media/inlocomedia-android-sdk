@@ -21,7 +21,7 @@ public class SplashActivity extends Activity {
     @Override
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+
         InLocoMedia.setup(this);
         
         this.setContentView(R.layout.activity_splash);

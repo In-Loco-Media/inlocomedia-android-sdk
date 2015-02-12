@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <solid android:color="@color/ub_gray_background" />
+
+    <stroke
+        android:width="2dip"
+        android:color="@color/ub_gray_foreground" />
+
+</shape><!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/drawable/ub_background_ad.xml -->
