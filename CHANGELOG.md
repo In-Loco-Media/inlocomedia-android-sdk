@@ -1,4 +1,10 @@
-v1.7 - 12/02/2015
+v1.7.1
+===
+
+* Hotfix: Optional permissions for the manifest merger
+
+
+v1.7
 ===
 
 * The project is now on Maven Central
