@@ -22,5 +22,5 @@ Requirements
 
 [documentation]: https://github.com/In-Loco-Media/inlocomedia-android-sdk/wiki
 [sign_up]: http://inlocomedia.com/
-[changelog]: https://github.com/In-Loco-Media/inlocomedia-android-sdk/blob/master/CHANGELOG
+[changelog]: https://github.com/In-Loco-Media/inlocomedia-android-sdk/blob/master/CHANGELOG.md
 [protobuff]: https://code.google.com/p/protobuf/
