@@ -1,11 +1,5 @@
 apply plugin: 'com.android.application'
 
-repositories {
-    maven {
-        url "https://oss.sonatype.org/content/repositories/releases/"
-    }
-}
-
 dependencies {
     compile fileTree(dir: 'libs', include: '*.jar')
 
