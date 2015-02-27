@@ -11,6 +11,9 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 import in.ubee.ads.example.R;
 import in.ubee.ads.example.activities.util.BaseActivity;
 
@@ -43,12 +46,21 @@ public class AdMobDisplayAdsMediationActivity extends BaseActivity {
                 view.setVisibility(View.VISIBLE);
 
                 mAdView.setVisibility(View.INVISIBLE);
-            };
+            }
+
+            ;
         });
 
         mAdView.setVisibility(View.INVISIBLE);
 
-        AdRequest adRequest = new AdRequest.Builder().build();
+        Date birthday = new GregorianCalendar(1985, 1, 1).getTime();
+        int gender = AdRequest.GENDER_FEMALE | AdRequest.GENDER_MALE;
+        AdRequest adRequest = new AdRequest.Builder()
+                .setGender(gender)
+                .setBirthday(birthday)
+                .build();
+
+
         mAdView.loadAd(adRequest);
 
         LayoutParams layoutParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL);

@@ -1,3 +1,9 @@
+
+v1.7.3
+===
+
+* Optimizating the AdRequest timeout
+
 v1.7.2
 ===
 
