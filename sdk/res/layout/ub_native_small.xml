@@ -24,14 +24,14 @@
         android:layout_weight="1"
         android:orientation="vertical" >
 
-        <in.ubee.api.ui.views.TypefacedTextView
+        <TextView
             android:id="@id/ub_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:singleLine="true"
             android:text="@string/ub_title" />
 
-        <in.ubee.api.ui.views.TypefacedTextView
+        <TextVi
             android:id="@id/ub_highlight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
