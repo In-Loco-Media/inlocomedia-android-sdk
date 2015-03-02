@@ -1,3 +1,9 @@
+v1.7.4
+===
+
+* New ad targets included
+* Hotfix: AdvertisementView missing one of the constructors
+
 v1.7.3
 ===
 
@@ -13,10 +19,10 @@ v1.7.1
 
 * Included required permissions on the sdk manifest for auto merge
 
-
 v1.7
 ===
 
+* Replacing AdvertisementView with AdView
 * The project is now on Maven Central
 * Optimizating the Ad deliver (Speed and Fill Rate)
 * Included new AdSize: MEDIUM_RECTANGLE
