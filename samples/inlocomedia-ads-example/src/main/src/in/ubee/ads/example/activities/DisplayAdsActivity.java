@@ -3,6 +3,7 @@ package in.ubee.ads.example.activities;
 import in.ubee.ads.example.R;
 import in.ubee.ads.example.activities.util.BaseActivity;
 import in.ubee.ads.example.activities.util.ListItem;
+import in.ubee.android.view.AdvertisementView;
 import in.ubee.api.ads.AdError;
 import in.ubee.api.ads.AdView;
 import in.ubee.api.ads.AdViewListener;
@@ -15,15 +16,6 @@ import android.widget.TextView;
 
 public class DisplayAdsActivity extends BaseActivity {
 
-    public static final String DISPLAY_TYPE_KEY = "bundle_key";
-
-    public static final int DISPLAY_BANNER_SMALL = 10;
-    public static final int DISPLAY_BANNER_LARGE = 20;
-    public static final int DISPLAY_FULL_SCREEN = 30;
-    public static final int DISPLAY_TILE = 40;
-    public static final int DISPLAY_SMART_BANNER = 50;
-    public static final int DISPLAY_BANNER_FULL_IAB = 60;
-
     private AdView mAdView;
 
     @Override
@@ -33,7 +25,7 @@ public class DisplayAdsActivity extends BaseActivity {
 
         ListItem item = (ListItem) getIntent().getSerializableExtra(MainActivity.EXTRA_ITEM);
         FrameLayout frameLayout = (FrameLayout) findViewById(R.id.ad_container);
-        
+
         mAdView = new AdView(this);
         mAdView.setType(item.getAdType());
         mAdView.setAdListener(new AdViewListener() {
