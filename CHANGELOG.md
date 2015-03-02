@@ -1,8 +1,7 @@
-
 v1.7.3
 ===
 
-* Optimizating the AdRequest timeout
+* Adjustments on AdRequest timeout for display and interstitial ads
 
 v1.7.2
 ===
