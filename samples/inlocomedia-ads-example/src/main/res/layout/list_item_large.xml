@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:orientation="vertical"
-    android:padding="@dimen/ub_margin" >
+    android:padding="@dimen/ub_margin">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -16,7 +17,7 @@
             android:layout_width="60dip"
             android:layout_height="60dip"
             android:background="@color/gray_light"
-            android:src="@drawable/img_content_small" />
+            app:ubPlaceholder="@drawable/img_content_small" />
 
         <LinearLayout
             android:layout_width="0dip"
@@ -59,6 +60,6 @@
         android:layout_gravity="center"
         android:background="@color/gray_light"
         android:scaleType="centerInside"
-        android:src="@drawable/ub_native_ad_large_placeholder" />
+        app:ubPlaceholder="@drawable/ub_native_ad_large_placeholder" />
 
 </LinearLayout>
