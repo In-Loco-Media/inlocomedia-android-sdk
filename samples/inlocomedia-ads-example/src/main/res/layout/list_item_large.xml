@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
@@ -12,12 +11,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
-        <in.ubee.api.ui.views.WebImageView
+        <ImageView
             android:id="@id/ub_icon"
             android:layout_width="60dip"
             android:layout_height="60dip"
             android:background="@color/gray_light"
-            app:ubPlaceholder="@drawable/img_content_small" />
+            android:src="@drawable/img_content_small" />
 
         <LinearLayout
             android:layout_width="0dip"
@@ -53,13 +52,13 @@
         android:layout_marginTop="@dimen/ub_margin"
         android:text="@string/ub_description" />
 
-    <in.ubee.api.ui.views.WebImageView
+    <ImageView
         android:id="@id/ub_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@color/gray_light"
         android:scaleType="centerInside"
-        app:ubPlaceholder="@drawable/ub_native_ad_large_placeholder" />
+        android:src="@drawable/ub_native_ad_large_placeholder" />
 
 </LinearLayout>
