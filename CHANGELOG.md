@@ -1,7 +1,13 @@
 v1.7.2
 ===
 
-* Hotfix: AdView timeout wasn't cancelling the request correctly
+###Hotfixes
+* AdView timeout wasn't cancelling the request correctly
+
+###Refactor
+* Fixed a memory leak in SplashActivity (sample project)
+* Removed WebImageView and TypefacedTextView
+* Removed res/layout/ub_native*.xml from the SDK to the sample project
 
 v1.7.1
 ===
