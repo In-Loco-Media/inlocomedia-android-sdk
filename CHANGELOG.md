@@ -1,3 +1,8 @@
+v1.7.5
+===
+* Removing necessity for the proguard '-keepattributes Signature' option 
+
+
 v1.7.4
 ===
 
