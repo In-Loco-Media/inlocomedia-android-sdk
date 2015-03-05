@@ -2,6 +2,10 @@ v1.7.5
 ===
 * Removing necessity for the proguard '-keepattributes Signature' option 
 
+###Refactor
+* Fixed a memory leak in SplashActivity (sample project)
+* Removed WebImageView and TypefacedTextView and moved res/layout/ub_native*.xml from the SDK to the sample project
+
 
 v1.7.4
 ===
@@ -19,11 +23,6 @@ v1.7.2
 
 ###Hotfixes
 * AdView timeout wasn't cancelling the request correctly
-
-###Refactor
-* Fixed a memory leak in SplashActivity (sample project)
-* Removed WebImageView and TypefacedTextView
-* Removed res/layout/ub_native*.xml from the SDK to the sample project
 
 v1.7.1
 ===
