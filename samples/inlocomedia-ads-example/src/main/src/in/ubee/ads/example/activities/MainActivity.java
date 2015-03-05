@@ -31,7 +31,7 @@ public class MainActivity extends BaseActivity {
 
         setContentView(R.layout.activity_new_main);
 
-        List<ListItem> mListItems = new ArrayList<ListItem>();
+        List<ListItem> mListItems = new ArrayList<>();
 
         ListItem[] displayItems = { new ListItem("Display Banner Small", AdType.DISPLAY_BANNER_SMALL, ItemType.DISPLAY),
                 new ListItem("Display Banner Small Landscape", AdType.DISPLAY_BANNER_SMALL_LANDSCAPE, ItemType.DISPLAY),
@@ -50,7 +50,9 @@ public class MainActivity extends BaseActivity {
         ListItem[] notificationItems = { new ListItem("Notification", AdType.NOTIFICATION, ItemType.NOTIFICATION) };
 
         ListItem[] mediationItems = { new ListItem("AdMob banner", AdType.DISPLAY_BANNER_SMALL, ItemType.ADMOB_MEDIATION),
-                new ListItem("AdMob interstitial", ItemType.ADMOB_MEDIATION) };
+                new ListItem("AdMob interstitial", ItemType.ADMOB_MEDIATION),
+                new ListItem("MoPub banner", AdType.DISPLAY_BANNER_SMALL, ItemType.MOPUB_MEDIATION),
+                new ListItem("MoPub interstitial", ItemType.MOPUB_MEDIATION)};
 
         ListItem[] customUsage = { new ListItem("Feed", ItemType.FEED), new ListItem("AdView using xml", ItemType.AD_VIEW_USING_XML) };
 
@@ -110,6 +112,17 @@ public class MainActivity extends BaseActivity {
                         startActivity(intent);
                     } else {
                         Intent intent = new Intent(MainActivity.this, AdMobInterstitialAdsMediationActivity.class);
+                        intent.putExtra(EXTRA_ITEM, item);
+                        startActivity(intent);
+                    }
+                } else if (item.getType() == ItemType.MOPUB_MEDIATION) {
+
+                    if (item.getAdType() != null && item.getAdType().isDisplay()) {
+                        Intent intent = new Intent(MainActivity.this, MoPubDisplayAdsMediationActivity.class);
+                        intent.putExtra(EXTRA_ITEM, item);
+                        startActivity(intent);
+                    } else {
+                        Intent intent = new Intent(MainActivity.this, MoPubInterstitialAdsMediationActivity.class);
                         intent.putExtra(EXTRA_ITEM, item);
                         startActivity(intent);
                     }
