@@ -89,12 +89,19 @@
             </intent-filter>
         </receiver>
 
+        <!-- MoPub -->
+
+        <activity android:name="com.mopub.mobileads.MoPubActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.mopub.mobileads.MraidActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.mopub.mobileads.MraidVideoPlayerActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+
         <!-- Mediation -->
 
-        <activity android:name="in.ubee.ads.example.activities.AdMobDisplayAdsMediationActivity" >
-        </activity>
-        <activity android:name="in.ubee.ads.example.activities.AdMobInterstitialAdsMediationActivity" >
-        </activity>
+        <activity android:name="in.ubee.ads.example.activities.AdMobDisplayAdsMediationActivity" />
+        <activity android:name="in.ubee.ads.example.activities.AdMobInterstitialAdsMediationActivity" />
+        <activity android:name="in.ubee.ads.example.activities.MoPubDisplayAdsMediationActivity" />
+        <activity android:name="in.ubee.ads.example.activities.MoPubInterstitialAdsMediationActivity" />
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"

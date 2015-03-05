@@ -13,7 +13,7 @@ public class ListItem implements Serializable {
     private ItemType type;
 
     public enum ItemType {
-        HEADER, DISPLAY, INTERSTITIAL, NATIVE, ADMOB_MEDIATION, NOTIFICATION, FEED, AD_VIEW_USING_XML;
+        HEADER, DISPLAY, INTERSTITIAL, NATIVE, ADMOB_MEDIATION, MOPUB_MEDIATION, NOTIFICATION, FEED, AD_VIEW_USING_XML;
     }
 
     private String displayableString;
