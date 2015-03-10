@@ -50,7 +50,6 @@ public class AdMobInterstitialAdsMediationActivity extends BaseActivity {
                     public void onAdFailedToLoad(int errorCode) {
                         TextView view = (TextView) findViewById(R.id.description_text);
                         view.setText("AdError: " + errorCode);
-                        view.setVisibility(View.VISIBLE);
                     }
 
                     @Override
