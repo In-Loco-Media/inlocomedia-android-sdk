@@ -2,7 +2,6 @@
 
 buildscript {
     repositories {
-        maven { url "http://minakov.github.io/mopub-sdk-android-aar" }
         jcenter()
     }
     dependencies {
@@ -15,7 +14,6 @@ buildscript {
 
 allprojects {
     repositories {
-        maven { url "http://minakov.github.io/mopub-sdk-android-aar" }
         jcenter()
     }
 }
