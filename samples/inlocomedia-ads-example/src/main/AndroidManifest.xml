@@ -100,6 +100,8 @@
 
         <activity android:name="in.ubee.ads.example.activities.AdMobDisplayAdsMediationActivity" />
         <activity android:name="in.ubee.ads.example.activities.AdMobInterstitialAdsMediationActivity" />
+        <activity android:name="in.ubee.ads.example.activities.DFPDisplayAdsMediationActivity" />
+        <activity android:name="in.ubee.ads.example.activities.DFPInterstitialAdsMediationActivity" />
         <activity android:name="in.ubee.ads.example.activities.MoPubDisplayAdsMediationActivity" />
         <activity android:name="in.ubee.ads.example.activities.MoPubInterstitialAdsMediationActivity" />
         <activity
