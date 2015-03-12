@@ -1,22 +1,23 @@
+v1.7.6
+===
+* Included maps sample project
+* Hotfix for the InterstitialAd that was logging the fail error twice
+
 v1.7.5
 ===
-* Removing necessity for the proguard '-keepattributes Signature' option 
-
+* Removing necessity for the proguard '-keepattributes Signature' option for the ads project
 
 v1.7.4
 ===
-
 * New ad targets included
 * Hotfix: AdvertisementView missing one of the constructors
 
 v1.7.3
 ===
-
 * Adjustments on AdRequest timeout for display and interstitial ads
 
 v1.7.2
 ===
-
 * Hotfix: AdView timeout wasn't cancelling the request correctly
 
 v1.7.1

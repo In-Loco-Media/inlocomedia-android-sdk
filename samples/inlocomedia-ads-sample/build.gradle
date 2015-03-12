@@ -10,14 +10,14 @@ dependencies {
     compile 'com.google.android.gms:play-services-ads:6.5.87'
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.mopub.mobileads:mopub-android:1.0@aar'
-
     //*
     compile project(':inlocomedia-android-sdk')
     compile project(':inlocomedia-android-adapters')
     /*/
-    compile 'com.inlocomedia.android:android-sdk:1.7.5'
+    compile 'com.inlocomedia.android:android-sdk:1.7.6'
     compile fileTree(dir: 'libs', include: '*.jar')
     //*/
+
 }
 
 android {
@@ -27,6 +27,17 @@ android {
     defaultConfig {
         minSdkVersion 9
         targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
     }
 
     sourceSets {
