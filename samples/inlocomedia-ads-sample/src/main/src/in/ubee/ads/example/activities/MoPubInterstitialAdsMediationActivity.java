@@ -1,0 +1,71 @@
+package in.ubee.ads.example.activities;
+
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.TextView;
+
+import com.mopub.mobileads.MoPubErrorCode;
+import com.mopub.mobileads.MoPubInterstitial;
+
+import in.ubee.ads.example.R;
+import in.ubee.ads.example.activities.util.BaseActivity;
+
+public class MoPubInterstitialAdsMediationActivity extends BaseActivity {
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        this.setContentView(R.layout.interstitial_ad_activity_layout);
+
+        View view = findViewById(R.id.request_interstitial_button);
+
+        view.setOnClickListener(new OnClickListener() {
+
+            public void onClick(View view) {
+
+                TextView textView = (TextView) findViewById(R.id.description_text);
+                textView.setText("Requesting Interstitial...");
+
+                final MoPubInterstitial iAd = new MoPubInterstitial(MoPubInterstitialAdsMediationActivity.this, getString(R.string.mopub_interstitial_ad_unit));
+                iAd.setInterstitialAdListener(new MoPubInterstitial.InterstitialAdListener() {
+                    @Override
+                    public void onInterstitialLoaded(MoPubInterstitial moPubInterstitial) {
+                        TextView textView = (TextView) findViewById(R.id.description_text);
+                        textView.setText("The InterstitialAd is ready. Will be shown in half second");
+
+                        textView.postDelayed(new Runnable() {
+                            public void run() {
+                                iAd.show();
+                            }
+                        }, 500);
+                    }
+
+                    @Override
+                    public void onInterstitialFailed(MoPubInterstitial moPubInterstitial, MoPubErrorCode moPubErrorCode) {
+                        TextView view = (TextView) findViewById(R.id.description_text);
+                        view.setText("AdError: " + moPubErrorCode);
+                    }
+
+                    @Override
+                    public void onInterstitialShown(MoPubInterstitial moPubInterstitial) {
+
+                    }
+
+                    @Override
+                    public void onInterstitialClicked(MoPubInterstitial moPubInterstitial) {
+
+                    }
+
+                    @Override
+                    public void onInterstitialDismissed(MoPubInterstitial moPubInterstitial) {
+                        TextView view = (TextView) findViewById(R.id.description_text);
+                        view.setText("The InterstitialAd was closed");
+                    }
+                });
+
+                iAd.load();
+            }
+        });
+    }
+}
