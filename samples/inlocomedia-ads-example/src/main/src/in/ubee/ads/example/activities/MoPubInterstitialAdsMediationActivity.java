@@ -45,7 +45,6 @@ public class MoPubInterstitialAdsMediationActivity extends BaseActivity {
                     public void onInterstitialFailed(MoPubInterstitial moPubInterstitial, MoPubErrorCode moPubErrorCode) {
                         TextView view = (TextView) findViewById(R.id.description_text);
                         view.setText("AdError: " + moPubErrorCode);
-                        view.setVisibility(View.VISIBLE);
                     }
 
                     @Override

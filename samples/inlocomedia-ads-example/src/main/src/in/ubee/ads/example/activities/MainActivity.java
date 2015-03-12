@@ -51,6 +51,8 @@ public class MainActivity extends BaseActivity {
 
         ListItem[] mediationItems = { new ListItem("AdMob banner", AdType.DISPLAY_BANNER_SMALL, ItemType.ADMOB_MEDIATION),
                 new ListItem("AdMob interstitial", ItemType.ADMOB_MEDIATION),
+                new ListItem("DFP banner", AdType.DISPLAY_BANNER_SMALL, ItemType.DFP_MEDIATION),
+                new ListItem("DFP interstitial", ItemType.DFP_MEDIATION),
                 new ListItem("MoPub banner", AdType.DISPLAY_BANNER_SMALL, ItemType.MOPUB_MEDIATION),
                 new ListItem("MoPub interstitial", ItemType.MOPUB_MEDIATION)};
 
@@ -93,39 +95,39 @@ public class MainActivity extends BaseActivity {
                 if (item.getType() == ItemType.INTERSTITIAL) {
                     Intent intent = new Intent(MainActivity.this, InterstitialAdActivity.class);
                     startActivity(intent);
+
                 } else if (item.getType() == ItemType.DISPLAY) {
                     Intent intent = new Intent(MainActivity.this, DisplayAdsActivity.class);
                     intent.putExtra(EXTRA_ITEM, item);
                     startActivity(intent);
+
                 } else if (item.getType() == ItemType.NATIVE ) {
                     Intent intent = new Intent(MainActivity.this, NativeAdActivity.class);
                     intent.putExtra(EXTRA_ITEM, item);
                     startActivity(intent);
+
                 } else if (item.getType() == ItemType.FEED) {
                     Intent intent = new Intent(MainActivity.this, AdFeedActivity.class);
                     startActivity(intent);
+
                 } else if (item.getType() == ItemType.ADMOB_MEDIATION) {
+                    Class clazz = (item.getAdType() != null && item.getAdType().isDisplay()) ? AdMobDisplayAdsMediationActivity.class : AdMobInterstitialAdsMediationActivity.class;
+                    Intent intent = new Intent(MainActivity.this, clazz);
+                    intent.putExtra(EXTRA_ITEM, item);
+                    startActivity(intent);
 
-                    if (item.getAdType() != null && item.getAdType().isDisplay()) {
-                        Intent intent = new Intent(MainActivity.this, AdMobDisplayAdsMediationActivity.class);
-                        intent.putExtra(EXTRA_ITEM, item);
-                        startActivity(intent);
-                    } else {
-                        Intent intent = new Intent(MainActivity.this, AdMobInterstitialAdsMediationActivity.class);
-                        intent.putExtra(EXTRA_ITEM, item);
-                        startActivity(intent);
-                    }
                 } else if (item.getType() == ItemType.MOPUB_MEDIATION) {
+                    Class clazz = (item.getAdType() != null && item.getAdType().isDisplay()) ? MoPubDisplayAdsMediationActivity.class : MoPubInterstitialAdsMediationActivity.class;
+                    Intent intent = new Intent(MainActivity.this, clazz);
+                    intent.putExtra(EXTRA_ITEM, item);
+                    startActivity(intent);
 
-                    if (item.getAdType() != null && item.getAdType().isDisplay()) {
-                        Intent intent = new Intent(MainActivity.this, MoPubDisplayAdsMediationActivity.class);
-                        intent.putExtra(EXTRA_ITEM, item);
-                        startActivity(intent);
-                    } else {
-                        Intent intent = new Intent(MainActivity.this, MoPubInterstitialAdsMediationActivity.class);
-                        intent.putExtra(EXTRA_ITEM, item);
-                        startActivity(intent);
-                    }
+                } else if (item.getType() == ItemType.DFP_MEDIATION) {
+                    Class clazz = (item.getAdType() != null && item.getAdType().isDisplay()) ? DFPDisplayAdsMediationActivity.class : DFPInterstitialAdsMediationActivity.class;
+                    Intent intent = new Intent(MainActivity.this, clazz);
+                    intent.putExtra(EXTRA_ITEM, item);
+                    startActivity(intent);
+
                 } else if (item.getType() == ItemType.AD_VIEW_USING_XML) {
                     Intent intent = new Intent(MainActivity.this, AdViewUsingXmlActivity.class);
                     startActivity(intent);
