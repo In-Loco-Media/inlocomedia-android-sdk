@@ -2,5 +2,3 @@ include ':inlocomedia-ads-sample'
 project(":inlocomedia-ads-sample").projectDir = new File("samples/inlocomedia-ads-sample")
 include ':inlocomedia-maps-sample'
 project(":inlocomedia-maps-sample").projectDir = new File("samples/inlocomedia-maps-sample")
-include ':inlocomedia-android-sdk'
-project(":inlocomedia-android-sdk").projectDir = new File("../inlocomedia-android-sdk-private/inloco-android-sdk")

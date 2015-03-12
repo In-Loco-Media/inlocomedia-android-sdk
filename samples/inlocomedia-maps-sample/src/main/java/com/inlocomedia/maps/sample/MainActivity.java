@@ -31,8 +31,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
     /**
      * Set your key and secret if you want to test your maps on this project
      */
-    private final static String MAPS_KEY = "4dbf36ace426cec4353900630b06c572d7b416bd23f7ba4aae0f2842e8ea1e38";
-    private final static String MAPS_SECRET = "795931ff8c1344c2656416f157f99c858391fe8d003bf1e994f4176537f79af9";
+    private final static String MAPS_KEY = "_____________________________________________________________";
+    private final static String MAPS_SECRET = "_____________________________________________________________";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
