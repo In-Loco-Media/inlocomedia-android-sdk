@@ -1,3 +1,7 @@
+v1.7.7
+===
+* Hotfix for the DisplayAd WebView that was failing to load some advertisements
+
 v1.7.6
 ===
 * Included maps sample project
@@ -10,11 +14,11 @@ v1.7.5
 v1.7.4
 ===
 * New ad targets included
-* Hotfix: AdvertisementView missing one of the constructors
+* Hotfix for AdvertisementView missing one of the constructors
 
 v1.7.3
 ===
-* Adjustments on AdRequest timeout for display and interstitial ads
+* Updating AdRequest timeout for display and interstitial ads
 
 v1.7.2
 ===

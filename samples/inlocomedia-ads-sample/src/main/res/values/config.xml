@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="ad_mob_banner_ad_unit">"____________________________________________"</string>
-    <string name="ad_mob_interstitial_ad_unit">"____________________________________________"</string>
+    <string name="ad_mob_banner_ad_unit">"______________________________________"</string>
+    <string name="ad_mob_interstitial_ad_unit">"______________________________________"</string>
     
 </resources>
