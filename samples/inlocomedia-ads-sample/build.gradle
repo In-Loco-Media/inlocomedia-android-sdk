@@ -15,18 +15,18 @@ dependencies {
     compile project(':inlocomedia-android-sdk')
     compile project(':inlocomedia-android-adapters')
     /*/
-    compile 'com.inlocomedia.android:android-sdk:1.7.7'
+    compile 'com.inlocomedia.android:android-sdk:1.7.+'
     compile fileTree(dir: 'libs', include: '*.jar')
     //*/
 }
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         minSdkVersion 9
-        targetSdkVersion 21
+        targetSdkVersion 22
     }
 
     buildTypes {
