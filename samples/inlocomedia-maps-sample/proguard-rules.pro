@@ -1,22 +1,15 @@
 #InLocoMedia exceptions
+-dontwarn in.ubee.**, com.inlocomedia.**
+-keep class in.ubee.**, com.inlocomedia.** { *; }
+-keepclassmembers class in.ubee.**, com.inlocomedia.** { *; }
 
--dontwarn in.ubee.**
--keep public class in.ubee.**
--keepclassmembers public class in.ubee.* {
-    *;
-}
+# Support for Android Advertiser ID
+-keep class com.google.android.gms.common.GooglePlayServicesUtil {*;}
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient {*;}
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient$Info {*;}
 
--dontwarn com.inlocomedia.**
--keep public class com.inlocomedia.**
--keepclassmembers public class com.inlocomedia.* {
-    *;
-}
-
-#InLocoMedia GooglePlayServices exceptions requirements
--keep public class com.google.android.gms.common.GooglePlayServicesUtil, com.google.android.gms.ads.identifier.** { *; }
-
--keepclassmembers public class com.google.android.gms.common.GooglePlayServicesUtil, com.google.android.gms.ads.identifier.** { *; }
-
+# Other required classes for Google Play Services
+# Read more at http://developer.android.com/google/play-services/setup.html
 -keep class * extends java.util.ListResourceBundle {
     protected Object[][] getContents();
 }

@@ -1,8 +1,5 @@
 package in.ubee.ads.example.activities;
 
-import in.ubee.ads.example.R;
-import in.ubee.ads.example.activities.util.BaseActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -11,6 +8,9 @@ import android.widget.TextView;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+
+import in.ubee.ads.example.R;
+import in.ubee.ads.example.activities.util.BaseActivity;
 
 public class AdMobInterstitialAdsMediationActivity extends BaseActivity {
 
