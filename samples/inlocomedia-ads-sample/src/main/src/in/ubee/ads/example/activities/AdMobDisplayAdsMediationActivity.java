@@ -56,8 +56,6 @@ public class AdMobDisplayAdsMediationActivity extends BaseActivity {
 
                 mAdView.setVisibility(View.INVISIBLE);
             }
-
-            ;
         });
 
         mAdView.setVisibility(View.INVISIBLE);

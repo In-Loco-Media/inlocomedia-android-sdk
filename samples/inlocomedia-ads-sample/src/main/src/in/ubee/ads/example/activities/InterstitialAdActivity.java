@@ -29,12 +29,6 @@ public class InterstitialAdActivity extends BaseActivity {
 
                 final InterstitialAd interstitialAd = new InterstitialAd(InterstitialAdActivity.this);
 
-                textView.postDelayed(new Runnable() {
-                    public void run() {
-                        interstitialAd.show();
-                    }
-                }, 500);
-
                 interstitialAd.setInterstitialAdListener(new InterstitialAdListener() {
 
                     @Override
