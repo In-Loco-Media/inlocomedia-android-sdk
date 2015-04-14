@@ -4,6 +4,10 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.TextView;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.FrameLayout.LayoutParams;
 import android.widget.TextView;
 
@@ -14,6 +18,18 @@ import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
 import com.google.android.gms.ads.doubleclick.PublisherAdView;
 
 import java.util.Date;
+import java.util.GregorianCalendar;
+
+import in.ubee.ads.example.R;
+import com.google.android.gms.ads.doubleclick.PublisherAdView;
+
+import com.google.android.gms.ads.doubleclick.PublisherAdView;
+
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
+import com.google.android.gms.ads.doubleclick.PublisherAdView;
+
 import java.util.GregorianCalendar;
 
 import in.ubee.ads.example.R;

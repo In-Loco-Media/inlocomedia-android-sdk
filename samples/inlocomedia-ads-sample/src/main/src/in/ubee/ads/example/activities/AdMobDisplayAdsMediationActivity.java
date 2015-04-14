@@ -1,6 +1,9 @@
 package in.ubee.ads.example.activities;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -12,6 +15,12 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 
 import java.util.Date;
+import java.util.GregorianCalendar;
+
+import in.ubee.ads.example.R;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+
 import java.util.GregorianCalendar;
 
 import in.ubee.ads.example.R;
@@ -47,8 +56,6 @@ public class AdMobDisplayAdsMediationActivity extends BaseActivity {
 
                 mAdView.setVisibility(View.INVISIBLE);
             }
-
-            ;
         });
 
         mAdView.setVisibility(View.INVISIBLE);
