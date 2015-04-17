@@ -13,6 +13,8 @@ import in.ubee.ads.example.activities.util.BaseActivity;
 
 public class MoPubInterstitialAdsMediationActivity extends BaseActivity {
 
+    private MoPubInterstitial mAd;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -27,8 +29,8 @@ public class MoPubInterstitialAdsMediationActivity extends BaseActivity {
                 TextView textView = (TextView) findViewById(R.id.description_text);
                 textView.setText("Requesting Interstitial...");
 
-                final MoPubInterstitial iAd = new MoPubInterstitial(MoPubInterstitialAdsMediationActivity.this, getString(R.string.mopub_interstitial_ad_unit));
-                iAd.setInterstitialAdListener(new MoPubInterstitial.InterstitialAdListener() {
+                mAd = new MoPubInterstitial(MoPubInterstitialAdsMediationActivity.this, getString(R.string.mopub_interstitial_ad_unit));
+                mAd.setInterstitialAdListener(new MoPubInterstitial.InterstitialAdListener() {
                     @Override
                     public void onInterstitialLoaded(MoPubInterstitial moPubInterstitial) {
                         TextView textView = (TextView) findViewById(R.id.description_text);
@@ -36,7 +38,7 @@ public class MoPubInterstitialAdsMediationActivity extends BaseActivity {
 
                         textView.postDelayed(new Runnable() {
                             public void run() {
-                                iAd.show();
+                                mAd.show();
                             }
                         }, 500);
                     }
@@ -64,8 +66,16 @@ public class MoPubInterstitialAdsMediationActivity extends BaseActivity {
                     }
                 });
 
-                iAd.load();
+                mAd.load();
             }
         });
+    }
+
+    @Override
+    public void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        if (mAd != null) {
+            mAd.destroy();
+        }
     }
 }

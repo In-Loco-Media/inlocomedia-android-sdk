@@ -6,11 +6,17 @@ repositories {
 
 dependencies {
 
-    // Required: Miscellaneous functionalities
+    // Required: For InLocoMedia SDK
+    compile 'com.inlocomedia.android:android-sdk:1.+'
+
+    // Required: Miscellaneous functionalitie
     compile 'com.android.support:support-v4:22.0.0'
 
     // Required: Access GooglePlayServices advertising id
     compile 'com.google.android.gms:play-services-ads:7.0.0'
+
+    // Optional: To access InLocoMedia mediation jars
+    compile fileTree(dir: 'libs', include: '*.jar')
 
     // Optional: To access GooglePlayServices ActivityRecognition
     compile 'com.google.android.gms:play-services-location:7.0.0'
@@ -18,26 +24,8 @@ dependencies {
     // Optional: For MoPub Mediation only
     compile 'com.mopub.mobileads:mopub-android:1.0@aar'
 
-    //*
-    compile (project(':inlocomedia-android-sdk')) {
-        exclude group: 'com.google.android.gms'
-        exclude group: 'com.android.support'
-    }
-    compile (project(':inlocomedia-android-adapters')) {
-        exclude group: 'com.google.android.gms'
-        exclude group: 'com.android.support'
-    }
-    /*/
-    // Required: For InLocoMedia SDK
-    compile 'com.inlocomedia.android:android-sdk:1.7.+'
-
-    // Optional: To access InLocoMedia mediation jars
-    compile fileTree(dir: 'libs', include: '*.jar')
-    //*/
-
-
     // Optional: Used for AdFeedRecyclerViewAdapter
-    compile 'com.android.support:recyclerview-v7:21.0.3'
+    compile 'com.android.support:recyclerview-v7:22.0.0'
 
     // Optional: Used for AdFeedRecyclerViewAdapter
     compile 'com.android.support:appcompat-v7:22.0.0'
@@ -59,7 +47,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }

@@ -32,3 +32,9 @@
 -keepnames class * implements android.os.Parcelable {
     public static final ** CREATOR;
 }
+
+# Google Play Service Ads
+
+-keep public class com.google.android.gms.ads.** { public *; }
+
+-keep public class com.google.ads.** { public *; }
