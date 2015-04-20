@@ -1,4 +1,4 @@
-package in.ubee.ads.example.activities.util;
+package com.inlocomedia.ads.sample.activities.util;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
@@ -10,8 +10,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import in.ubee.ads.example.R;
-import in.ubee.ads.example.activities.CategoriesActivity;
+import com.inlocomedia.ads.sample.R;
+import com.inlocomedia.ads.sample.activities.CategoriesActivity;
 
 public class BaseActivity extends FragmentActivity {
 

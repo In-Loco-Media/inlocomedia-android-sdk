@@ -1,4 +1,4 @@
-package in.ubee.ads.example.activities.util;
+package com.inlocomedia.ads.sample.activities.util;
 
 import java.io.Serializable;
 

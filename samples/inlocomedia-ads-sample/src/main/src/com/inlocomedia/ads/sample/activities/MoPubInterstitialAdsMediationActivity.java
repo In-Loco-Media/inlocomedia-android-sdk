@@ -1,4 +1,4 @@
-package in.ubee.ads.example.activities;
+package com.inlocomedia.ads.sample.activities;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,8 +8,8 @@ import android.widget.TextView;
 import com.mopub.mobileads.MoPubErrorCode;
 import com.mopub.mobileads.MoPubInterstitial;
 
-import in.ubee.ads.example.R;
-import in.ubee.ads.example.activities.util.BaseActivity;
+import com.inlocomedia.ads.sample.R;
+import com.inlocomedia.ads.sample.activities.util.BaseActivity;
 
 public class MoPubInterstitialAdsMediationActivity extends BaseActivity {
 

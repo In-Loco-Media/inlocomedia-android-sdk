@@ -1,3 +1,15 @@
+v1.8 (20/04/2015)
+===
+* Hotfix: Solving Issue [#1][https://github.com/In-Loco-Media/inlocomedia-android-sdk/issues/1]
+* Hotfix: FeedAdapter reloading error
+* Hotfix: InterstitialAd notifyAdReady without registered listeners
+* Increasing IndoorLocation precision
+* AdView refresh is now resuming after being previously paused
+* AdView register a new ScreenStateReceiver only when the auto refresh is enabled.
+* Method ubeeOptions.setDevelopmentMode(boolean) is now deprecated, use ubeeOptions.setDevelopmentDeviceId(String...) instead.
+* Updated gradle plugin to 1.1.0
+* UserProfile usage is now modified (As a result if you are using the old mediation library (<= 1.2.3) you will need to update it)
+
 v1.7.7
 ===
 * Hotfix for the DisplayAd WebView that was failing to load some advertisements

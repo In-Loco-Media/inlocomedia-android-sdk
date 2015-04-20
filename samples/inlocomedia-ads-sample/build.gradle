@@ -7,7 +7,7 @@ repositories {
 dependencies {
 
     // Required: For InLocoMedia SDK
-    compile 'com.inlocomedia.android:android-sdk:1.+'
+    compile 'com.inlocomedia.android:android-sdk:1.8.+'
 
     // Required: Miscellaneous functionalitie
     compile 'com.android.support:support-v4:22.0.0'
@@ -37,6 +37,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
+        applicationId "com.inlocomedia.ads.sample"
         minSdkVersion 9
         targetSdkVersion 22
     }
@@ -45,9 +46,10 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
         }
         debug {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }

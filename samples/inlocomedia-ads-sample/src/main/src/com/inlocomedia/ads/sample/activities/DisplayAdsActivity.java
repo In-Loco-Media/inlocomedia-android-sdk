@@ -1,9 +1,9 @@
-package in.ubee.ads.example.activities;
+package com.inlocomedia.ads.sample.activities;
 
-import in.ubee.ads.example.R;
-import in.ubee.ads.example.activities.util.BaseActivity;
-import in.ubee.ads.example.activities.util.ListItem;
-import in.ubee.android.view.AdvertisementView;
+import com.inlocomedia.ads.sample.R;
+import com.inlocomedia.ads.sample.activities.util.BaseActivity;
+import com.inlocomedia.ads.sample.activities.util.ListItem;
+
 import in.ubee.api.ads.AdError;
 import in.ubee.api.ads.AdView;
 import in.ubee.api.ads.AdViewListener;

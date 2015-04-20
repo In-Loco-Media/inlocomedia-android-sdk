@@ -1,4 +1,4 @@
-package in.ubee.ads.example.activities;
+package com.inlocomedia.ads.sample.activities;
 
 import android.os.Bundle;
 import android.view.Gravity;
@@ -10,8 +10,8 @@ import android.widget.TextView;
 import com.mopub.mobileads.MoPubErrorCode;
 import com.mopub.mobileads.MoPubView;
 
-import in.ubee.ads.example.R;
-import in.ubee.ads.example.activities.util.BaseActivity;
+import com.inlocomedia.ads.sample.R;
+import com.inlocomedia.ads.sample.activities.util.BaseActivity;
 
 public class MoPubDisplayAdsMediationActivity extends BaseActivity {
 

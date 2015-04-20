@@ -1,4 +1,4 @@
-package in.ubee.ads.example.activities;
+package com.inlocomedia.ads.sample.activities;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,13 +6,13 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
-import com.google.android.gms.ads.doubleclick.PublisherInterstitialAd;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 
-import in.ubee.ads.example.R;
-import in.ubee.ads.example.activities.util.BaseActivity;
+import com.inlocomedia.ads.sample.R;
+import com.inlocomedia.ads.sample.activities.util.BaseActivity;
 
-public class DFPInterstitialAdsMediationActivity extends BaseActivity {
+public class AdMobInterstitialAdsMediationActivity extends BaseActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,12 +28,13 @@ public class DFPInterstitialAdsMediationActivity extends BaseActivity {
                 TextView textView = (TextView) findViewById(R.id.description_text);
                 textView.setText("Requesting Interstitial...");
 
-                final PublisherInterstitialAd iAd = new PublisherInterstitialAd(DFPInterstitialAdsMediationActivity.this);
-                iAd.setAdUnitId(getString(R.string.dfp_interstitial_ad_unit));
+                final InterstitialAd iAd = new InterstitialAd(AdMobInterstitialAdsMediationActivity.this);
+                iAd.setAdUnitId(getString(R.string.ad_mob_interstitial_ad_unit));
                 iAd.setAdListener(new AdListener() {
 
                     @Override
                     public void onAdLoaded() {
+
                         TextView textView = (TextView) findViewById(R.id.description_text);
                         textView.setText("The InterstitialAd is ready. Will be shown in half second");
 
@@ -42,6 +43,7 @@ public class DFPInterstitialAdsMediationActivity extends BaseActivity {
                                 iAd.show();
                             }
                         }, 500);
+
                     }
 
                     @Override
@@ -57,7 +59,7 @@ public class DFPInterstitialAdsMediationActivity extends BaseActivity {
                     }
                 });
 
-                PublisherAdRequest adRequest = new PublisherAdRequest.Builder().build();
+                AdRequest adRequest = new AdRequest.Builder().build();
                 iAd.loadAd(adRequest);
             }
         });

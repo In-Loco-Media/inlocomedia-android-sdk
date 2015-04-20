@@ -1,4 +1,4 @@
-package in.ubee.ads.example.activities;
+package com.inlocomedia.ads.sample.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 
-import in.ubee.ads.example.R;
-import in.ubee.ads.example.application.InLocoMedia;
+import com.inlocomedia.ads.sample.R;
+import com.inlocomedia.ads.sample.application.InLocoMedia;
 
 public class SplashActivity extends Activity {
 

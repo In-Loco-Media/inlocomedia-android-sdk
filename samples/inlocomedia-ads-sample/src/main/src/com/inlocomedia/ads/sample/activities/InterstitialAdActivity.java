@@ -1,19 +1,18 @@
-package in.ubee.ads.example.activities;
+package com.inlocomedia.ads.sample.activities;
 
+import com.inlocomedia.ads.sample.R;
+import com.inlocomedia.ads.sample.activities.util.BaseActivity;
+import in.ubee.api.ads.AdError;
+import in.ubee.api.ads.interstitial.InterstitialAd;
+import in.ubee.api.ads.interstitial.InterstitialAdListener;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
+public class InterstitialAdActivity extends BaseActivity {
 
-import in.ubee.ads.example.R;
-import in.ubee.ads.example.activities.util.BaseActivity;
-
-public class AdMobInterstitialAdsMediationActivity extends BaseActivity {
-
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -28,40 +27,49 @@ public class AdMobInterstitialAdsMediationActivity extends BaseActivity {
                 TextView textView = (TextView) findViewById(R.id.description_text);
                 textView.setText("Requesting Interstitial...");
 
-                final InterstitialAd iAd = new InterstitialAd(AdMobInterstitialAdsMediationActivity.this);
-                iAd.setAdUnitId(getString(R.string.ad_mob_interstitial_ad_unit));
-                iAd.setAdListener(new AdListener() {
+                final InterstitialAd interstitialAd = new InterstitialAd(InterstitialAdActivity.this);
+
+                interstitialAd.setInterstitialAdListener(new InterstitialAdListener() {
 
                     @Override
-                    public void onAdLoaded() {
+                    public void onAdReady(final InterstitialAd ad) {
 
                         TextView textView = (TextView) findViewById(R.id.description_text);
                         textView.setText("The InterstitialAd is ready. Will be shown in half second");
 
                         textView.postDelayed(new Runnable() {
                             public void run() {
-                                iAd.show();
+                                ad.show();
                             }
                         }, 500);
-
                     }
 
                     @Override
-                    public void onAdFailedToLoad(int errorCode) {
+                    public void onAdOpened(InterstitialAd ad) {
                         TextView view = (TextView) findViewById(R.id.description_text);
-                        view.setText("AdError: " + errorCode);
+                        view.setText("The InterstitialAd was opened");
                     }
 
                     @Override
-                    public void onAdClosed() {
+                    public void onAdError(InterstitialAd ad, AdError adError) {
+                        TextView view = (TextView) findViewById(R.id.description_text);
+                        view.setText("AdError: " + adError);
+                        view.setVisibility(View.VISIBLE);
+                    }
+
+                    @Override
+                    public void onAdClosed(InterstitialAd ad) {
                         TextView view = (TextView) findViewById(R.id.description_text);
                         view.setText("The InterstitialAd was closed");
                     }
-                });
 
-                AdRequest adRequest = new AdRequest.Builder().build();
-                iAd.loadAd(adRequest);
+                    @Override
+                    public void onAdLeftApplication(InterstitialAd ad) {}
+
+                });
+                interstitialAd.loadAd();
             }
         });
     }
+
 }

@@ -15,9 +15,10 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
         }
         debug {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -28,5 +29,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile 'com.google.android.gms:play-services-ads:7.0.0'
     compile 'com.google.android.gms:play-services-location:7.0.0'
-    compile 'com.inlocomedia.android:android-sdk:1.+'
+    compile 'com.inlocomedia.android:android-sdk:1.8.+'
 }

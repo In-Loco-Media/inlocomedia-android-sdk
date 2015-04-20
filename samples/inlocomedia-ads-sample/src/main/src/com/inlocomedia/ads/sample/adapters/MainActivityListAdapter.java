@@ -1,8 +1,8 @@
-package in.ubee.ads.example.adapters;
+package com.inlocomedia.ads.sample.adapters;
 
-import in.ubee.ads.example.R;
-import in.ubee.ads.example.activities.util.ListItem;
-import in.ubee.ads.example.activities.util.ListItem.ItemType;
+import com.inlocomedia.ads.sample.R;
+import com.inlocomedia.ads.sample.activities.util.ListItem;
+import com.inlocomedia.ads.sample.activities.util.ListItem.ItemType;
 import in.ubee.api.Ubee;
 
 import java.util.List;

@@ -1,6 +1,6 @@
-package in.ubee.ads.example.adapters;
+package com.inlocomedia.ads.sample.adapters;
 
-import in.ubee.ads.example.R;
+import com.inlocomedia.ads.sample.R;
 import in.ubee.api.ads.AdRequest;
 import in.ubee.models.Category;
 

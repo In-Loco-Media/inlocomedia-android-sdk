@@ -1,7 +1,7 @@
-package in.ubee.ads.example.activities;
+package com.inlocomedia.ads.sample.activities;
 
-import in.ubee.ads.example.R;
-import in.ubee.ads.example.activities.util.BaseActivity;
+import com.inlocomedia.ads.sample.R;
+import com.inlocomedia.ads.sample.activities.util.BaseActivity;
 import in.ubee.api.ads.AdError;
 import in.ubee.api.ads.AdRequest;
 import in.ubee.api.ads.AdType;

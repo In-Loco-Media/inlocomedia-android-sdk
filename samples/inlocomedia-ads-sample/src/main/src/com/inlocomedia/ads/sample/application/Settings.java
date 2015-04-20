@@ -1,4 +1,4 @@
-package in.ubee.ads.example.application;
+package com.inlocomedia.ads.sample.application;
 
 public final class Settings {
 
