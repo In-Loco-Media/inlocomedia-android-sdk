@@ -23,12 +23,5 @@ public final class InLocoMedia {
         options.setAdsKey(Settings.INLOCOMEDIA_KEY, Settings.INLOCOMEDIA_SECRET);
 
         Ubee.init(context, options);
-
-
-        AdRequest adRequest = AdRequest.defaultRequest(context);
-        adRequest.setUserProfile(new UserProfile(10, UserProfile.Gender.MALE));
-        adRequest.saveAsDefaultRequest(context);
-
-        AdRequest.clearDefaultRequest(context);
     }
 }
