@@ -1,4 +1,4 @@
-package com.inlocomedia.ads.sample.activities;
+package com.inlocomedia.ads.sample.activities.mediation;
 
 import android.os.Bundle;
 import android.view.View;

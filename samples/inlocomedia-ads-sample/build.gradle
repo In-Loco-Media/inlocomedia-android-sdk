@@ -1,35 +1,43 @@
 apply plugin: 'com.android.application'
 
 repositories {
+    // Optional: Used for MoPub demonstration only
     maven { url "http://minakov.github.io/mopub-sdk-android-aar" }
 }
 
 dependencies {
 
-    // Required: For InLocoMedia SDK
+    // Required
     compile 'com.inlocomedia.android:android-sdk:1.8.+'
 
-    // Required: Miscellaneous functionalitie
+    // Required
     compile 'com.android.support:support-v4:22.0.0'
 
     // Required: Access GooglePlayServices advertising id
     compile 'com.google.android.gms:play-services-ads:7.0.0'
 
-    // Optional: To access InLocoMedia mediation jars
-    compile fileTree(dir: 'libs', include: '*.jar')
-
     // Optional: To access GooglePlayServices ActivityRecognition
     compile 'com.google.android.gms:play-services-location:7.0.0'
 
-    // Optional: For MoPub Mediation only
-    compile 'com.mopub.mobileads:mopub-android:1.0@aar'
 
+    // AdFeed dependencies
     // Optional: Used for AdFeedRecyclerViewAdapter
     compile 'com.android.support:recyclerview-v7:22.0.0'
 
     // Optional: Used for AdFeedRecyclerViewAdapter
     compile 'com.android.support:appcompat-v7:22.0.0'
 
+
+    // AdMob/DFP mediation dependencies
+    // Optional: To access InLocoMedia AdMob mediation jar
+    compile fileTree(dir: 'libs', include: 'inlocomedia-adapters-admob-1.2.4.jar')
+
+
+    // MoPub mediation dependencies
+    // Optional: Sample for MoPub mediation demonstration
+    compile 'com.mopub.mobileads:mopub-android:1.0@aar'
+    // Optional: To access InLocoMedia MoPub mediation jar demonstration
+    compile fileTree(dir: 'libs', include: 'inlocomedia-adapters-admob-1.2.4.jar')
 }
 
 android {
@@ -55,11 +63,11 @@ android {
     }
 
     sourceSets {
-        main {
-            manifest.srcFile 'src/main/AndroidManifest.xml'
-            java.srcDirs = ['src/main/src']
-            res.srcDirs = ['src/main/res']
-        }
+//        main {
+//            manifest.srcFile 'AndroidManifest.xml'
+//            java.srcDirs = ['src/main/java']
+//            res.srcDirs = ['res']
+//        }
 
         instrumentTest.setRoot('tests')
         debug.setRoot('build-types/debug')

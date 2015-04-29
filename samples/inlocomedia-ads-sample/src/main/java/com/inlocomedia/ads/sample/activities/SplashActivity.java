@@ -17,8 +17,6 @@ public class SplashActivity extends Activity {
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        InLocoMedia.setup(this);
-
         this.setContentView(R.layout.activity_splash);
         View view = findViewById(R.id.splash_screen_click_view_id);
         view.setOnClickListener(new View.OnClickListener() {

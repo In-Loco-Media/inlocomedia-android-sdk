@@ -1,17 +1,15 @@
-package com.inlocomedia.ads.sample.activities;
+package com.inlocomedia.ads.sample.activities.mediation;
 
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+import android.view.Gravity;
 import android.widget.FrameLayout.LayoutParams;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
-import com.google.android.gms.ads.doubleclick.PublisherAdView;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -20,9 +18,9 @@ import com.inlocomedia.ads.sample.R;
 
 import com.inlocomedia.ads.sample.activities.util.BaseActivity;
 
-public class DFPDisplayAdsMediationActivity extends BaseActivity {
+public class AdMobDisplayAdsMediationActivity extends BaseActivity {
 
-    private PublisherAdView mAdView;
+    private com.google.android.gms.ads.AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +29,9 @@ public class DFPDisplayAdsMediationActivity extends BaseActivity {
 
         FrameLayout frameLayout = (FrameLayout) findViewById(R.id.ad_container);
 
-        mAdView = new PublisherAdView(this);
-        mAdView.setAdSizes(AdSize.BANNER);
-        mAdView.setAdUnitId(getString(R.string.dfp_banner_ad_unit));
+        mAdView = new com.google.android.gms.ads.AdView(this);
+        mAdView.setAdSize(AdSize.BANNER);
+        mAdView.setAdUnitId(getString(R.string.ad_mob_banner_ad_unit));
 
         mAdView.setAdListener(new AdListener() {
             @Override
@@ -56,10 +54,11 @@ public class DFPDisplayAdsMediationActivity extends BaseActivity {
 
         Date birthday = new GregorianCalendar(1985, 1, 1).getTime();
         int gender = AdRequest.GENDER_FEMALE | AdRequest.GENDER_MALE;
-        PublisherAdRequest adRequest = new PublisherAdRequest.Builder()
+        AdRequest adRequest = new AdRequest.Builder()
                 .setGender(gender)
                 .setBirthday(birthday)
                 .build();
+
 
         mAdView.loadAd(adRequest);
 

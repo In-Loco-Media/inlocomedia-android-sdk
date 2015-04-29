@@ -12,12 +12,32 @@ local.properties
 # Gradle Files
 .gradle
 build/
-
+bin/
+gen/
 /taskArtifacts
 lint-report.html
 lint-report_files/
 
+# Local configuration files
+proguard/
+
+# Eclipse metadata
+.metadata/
+
+# Mac OS X clutter
+*.DS_Store
+
+# Windows clutter
+Thumbs.db
+
+# Intellij IDEA
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/datasources.xml
+.idea/dataSources.ids
+
+*.iml
+
 # Proguard Files
 proguard/mapping.txt
 .idea
-*.iml
