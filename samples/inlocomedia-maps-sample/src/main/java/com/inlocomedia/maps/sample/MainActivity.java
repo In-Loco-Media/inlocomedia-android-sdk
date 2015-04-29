@@ -39,6 +39,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         UbeeOptions options = UbeeOptions.getInstance(this);
         options.setLogEnabled(getResources().getBoolean(R.bool.inlocomedia_maps_sample_logs_enabled));
+
+        /**
+         * Set your key and secret if you want to test your maps on this project
+         */
         options.setMapsKey(getString(R.string.inlocomedia_maps_sample_key),
                            getString(R.string.inlocomedia_maps_sample_secret));
 
