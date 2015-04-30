@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Sample Maps Application credentials -->
+    <string name="inlocomedia_maps_sample_key"> </string>
+    <string name="inlocomedia_maps_sample_secret"> </string>
+    <bool name="inlocomedia_maps_sample_logs_enabled">true</bool>
+</resources>

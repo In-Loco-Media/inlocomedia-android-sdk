@@ -28,12 +28,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private OnLocationListener mLocationListener;
     private TextView mLabel;
 
-    /**
-     * Set your key and secret if you want to test your maps on this project
-     */
-    private final static String MAPS_KEY = "";
-    private final static String MAPS_SECRET = "";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,10 +38,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
          */
 
         UbeeOptions options = UbeeOptions.getInstance(this);
-        options.setLogEnabled(true);
-        options.setMapsKey(MAPS_KEY, MAPS_SECRET);
-        Ubee.init(this, options);
+        options.setLogEnabled(getResources().getBoolean(R.bool.inlocomedia_maps_sample_logs_enabled));
 
+        /**
+         * Set your key and secret if you want to test your maps on this project
+         */
+        options.setMapsKey(getString(R.string.inlocomedia_maps_sample_key),
+                           getString(R.string.inlocomedia_maps_sample_secret));
+
+        Ubee.init(this, options);
 
         /**
          * Instantiating the layout's views
