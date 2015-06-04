@@ -22,8 +22,8 @@ public class MainActivity extends Activity {
         // Initializing InLocoMedia Options. Put it on your first activity
         UbeeOptions options = UbeeOptions.getInstance(this);
 
-        // Enabling development mode
-        options.setDevelopmentEnvironment(getResources().getBoolean(R.bool.inlocomedia_ads_sample_debug));
+        // The deviceId can be obtained by viewing the logcat output after creating a new ad:
+        options.setDevelopmentDevices("427E587BAAAF5B25906638C74087C745");
 
         // Enabling verbose mode
         options.setLogEnabled(getResources().getBoolean(R.bool.inlocomedia_ads_sample_logs_enabled));
