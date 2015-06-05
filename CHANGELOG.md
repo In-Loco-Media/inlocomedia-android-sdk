@@ -1,4 +1,8 @@
-v1.9 (04/06/2015)
+v1.9.1 
+===
+* Hotfix: Proguard wrong code stripping
+
+v1.9.0 (04/06/2015)
 ===
 * Feature: Optimizating notification delivery
 * Bugfixes
