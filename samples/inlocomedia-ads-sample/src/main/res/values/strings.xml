@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Ubee Ads</string>
-    
+    <string name="app_name">InLocoMedia Ads Sample</string>
     
     <string name="display_ad_screen_text">Here you will see a display ad on the bottom of the screen</string>
     <string name="interstitial_ad_screen_text">Press the Button to request the Ad</string>
     <string name="interstitial_list_item_title">Notification</string>
     <string name="main_activitt_list_item_header">Header</string>
-    
+
     <string name="native_screen_text">Here you will see a native ad as one of the elements of the list (Scroll the list to see)</string>
 
     <string name="your_app_content">Your app content</string>

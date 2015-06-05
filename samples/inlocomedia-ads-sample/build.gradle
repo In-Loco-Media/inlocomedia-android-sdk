@@ -8,24 +8,23 @@ repositories {
 dependencies {
 
     // Required
-    compile 'com.inlocomedia.android:android-sdk:1.8.+'
+    compile 'com.inlocomedia.android:android-sdk:1.9.+'
 
     // Required
-    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.android.support:support-v4:22.2.0'
 
     // Required: Access GooglePlayServices advertising id
-    compile 'com.google.android.gms:play-services-ads:7.0.0'
+    compile 'com.google.android.gms:play-services-ads:7.5.0'
 
     // Optional: To access GooglePlayServices ActivityRecognition
-    compile 'com.google.android.gms:play-services-location:7.0.0'
-
+    compile 'com.google.android.gms:play-services-location:7.5.0'
 
     // AdFeed dependencies
     // Optional: Used for AdFeedRecyclerViewAdapter
-    compile 'com.android.support:recyclerview-v7:22.0.0'
+    compile 'com.android.support:recyclerview-v7:22.2.0'
 
     // Optional: Used for AdFeedRecyclerViewAdapter
-    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:appcompat-v7:22.2.0'
 
 
     // AdMob/DFP mediation dependencies

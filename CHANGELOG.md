@@ -1,3 +1,12 @@
+v1.9.1 
+===
+* Hotfix: Proguard wrong code stripping
+
+v1.9.0 (04/06/2015)
+===
+* Feature: Optimizating notification delivery
+* Bugfixes
+
 v1.8 (20/04/2015)
 ===
 * Hotfix: Solving Issue [#1][https://github.com/In-Loco-Media/inlocomedia-android-sdk/issues/1]
