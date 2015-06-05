@@ -62,7 +62,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         mapOptions.setUserInteractionEnabled(true);
         mapOptions.setZoomEnabled(true);
         mapOptions.setTranslationEnabled(true);
-        mIndoorMapView.setOptions(new IndoorMapView.Options());
+        mIndoorMapView.setOptions(mapOptions);
 
         mLabel = (TextView) findViewById(R.id.label);
         mPreviousFloorButton = (ImageButton) this.findViewById(R.id.previous_floor);
