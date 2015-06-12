@@ -56,7 +56,7 @@ public class MainActivityListView extends ListView {
             new ListItem("Display Banner Tablet", AdType.DISPLAY_BANNER_TABLET, ListItem.ItemType.DISPLAY),
             new ListItem("Display Banner Tile", AdType.DISPLAY_TILE, ListItem.ItemType.DISPLAY),
             new ListItem("Display Smart Banner", AdType.SMART_BANNER, ListItem.ItemType.DISPLAY),
-            new ListItem("Display Banner Small using Xml", ListItem.ItemType.DISPLAY_USING_XML)};
+            new ListItem("Display Banner Large using Xml", ListItem.ItemType.DISPLAY_USING_XML)};
 
     private ListItem[] customUsage = {
             new ListItem("Feed", ListItem.ItemType.FEED) };

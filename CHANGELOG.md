@@ -1,3 +1,7 @@
+v1.9.2
+===
+* Bugfixes
+
 v1.9.1 
 ===
 * Hotfix: Proguard wrong code stripping
