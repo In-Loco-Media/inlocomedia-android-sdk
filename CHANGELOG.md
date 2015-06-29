@@ -1,3 +1,8 @@
+v1.9.3
+===
+* Removing ACCESS_WIFI_STATE and CHANGE_WIFI_STATE as required permissions.
+* Hotfix: Analytics location error
+
 v1.9.2
 ===
 * Bugfixes
