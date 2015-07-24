@@ -19,15 +19,9 @@ import com.inlocomedia.ads.sample.R;
 import com.inlocomedia.ads.sample.activities.AdFeedActivity;
 import com.inlocomedia.ads.sample.activities.DisplayAdViewUsingXmlActivity;
 import com.inlocomedia.ads.sample.activities.NotificationActivity;
-import com.inlocomedia.ads.sample.activities.mediation.AdMobDisplayAdsMediationActivity;
-import com.inlocomedia.ads.sample.activities.mediation.AdMobInterstitialAdsMediationActivity;
-import com.inlocomedia.ads.sample.activities.mediation.DFPDisplayAdsMediationActivity;
-import com.inlocomedia.ads.sample.activities.mediation.DFPInterstitialAdsMediationActivity;
 import com.inlocomedia.ads.sample.activities.DisplayAdsActivity;
 import com.inlocomedia.ads.sample.activities.InterstitialAdActivity;
 import com.inlocomedia.ads.sample.activities.MainActivity;
-import com.inlocomedia.ads.sample.activities.mediation.MoPubDisplayAdsMediationActivity;
-import com.inlocomedia.ads.sample.activities.mediation.MoPubInterstitialAdsMediationActivity;
 import com.inlocomedia.ads.sample.activities.NativeAdActivity;
 import com.inlocomedia.ads.sample.activities.util.ListItem;
 
@@ -72,19 +66,10 @@ public class MainActivityListView extends ListView {
     private ListItem[] notificationItems = {
             new ListItem("Notification", AdType.NOTIFICATION, ListItem.ItemType.NOTIFICATION) };
 
-    private ListItem[] mediationItems = {
-            new ListItem("AdMob banner", AdType.DISPLAY_BANNER_SMALL, ListItem.ItemType.ADMOB_MEDIATION_BANNER),
-            new ListItem("AdMob interstitial", ListItem.ItemType.ADMOB_MEDIATION_INTERSTITIAL),
-            new ListItem("DFP banner", AdType.DISPLAY_BANNER_SMALL, ListItem.ItemType.DFP_MEDIATION_BANNER),
-            new ListItem("DFP interstitial", ListItem.ItemType.DFP_MEDIATION_INTERSTITIAL),
-            new ListItem("MoPub banner", AdType.DISPLAY_BANNER_SMALL, ListItem.ItemType.MOPUB_MEDIATION_BANNER),
-            new ListItem("MoPub interstitial", ListItem.ItemType.MOPUB_MEDIATION_INTERSTITIAL) };
-
     private ListItem displayHeader = new ListItem("Display Ads", ListItem.ItemType.HEADER);
     private ListItem interstitialHeader = new ListItem("Interstitial Ads", ListItem.ItemType.HEADER);
     private ListItem nativeHeader = new ListItem("Native Ads", ListItem.ItemType.HEADER);
     private ListItem notificationHeader = new ListItem("Notification", ListItem.ItemType.HEADER);
-    private ListItem mediationHeader = new ListItem("Mediation", ListItem.ItemType.HEADER);
     private ListItem othersHeader = new ListItem("Custom Usage", ListItem.ItemType.HEADER);
 
     private List<ListItem> mListItems = new ArrayList<>();
@@ -124,9 +109,6 @@ public class MainActivityListView extends ListView {
         mListItems.add(notificationHeader);
         Collections.addAll(mListItems, notificationItems);
 
-        mListItems.add(mediationHeader);
-        Collections.addAll(mListItems, mediationItems);
-
         mListItems.add(othersHeader);
         Collections.addAll(mListItems, customUsage);
 
@@ -153,24 +135,6 @@ public class MainActivityListView extends ListView {
 
                 } else if (item.getType() == ListItem.ItemType.FEED) {
                     startActivity(AdFeedActivity.class);
-
-                } else if (item.getType() == ListItem.ItemType.ADMOB_MEDIATION_BANNER) {
-                    startActivity(AdMobDisplayAdsMediationActivity.class);
-
-                } else if (item.getType() == ListItem.ItemType.ADMOB_MEDIATION_INTERSTITIAL) {
-                    startActivity(AdMobInterstitialAdsMediationActivity.class);
-
-                } else if (item.getType() == ListItem.ItemType.MOPUB_MEDIATION_BANNER) {
-                    startActivity(MoPubDisplayAdsMediationActivity.class);
-
-                } else if (item.getType() == ListItem.ItemType.MOPUB_MEDIATION_INTERSTITIAL) {
-                    startActivity(MoPubInterstitialAdsMediationActivity.class);
-
-                } else if (item.getType() == ListItem.ItemType.DFP_MEDIATION_BANNER) {
-                    startActivity(DFPDisplayAdsMediationActivity.class);
-
-                } else if (item.getType() == ListItem.ItemType.DFP_MEDIATION_INTERSTITIAL) {
-                    startActivity(DFPInterstitialAdsMediationActivity.class);
                 }
             }
         });

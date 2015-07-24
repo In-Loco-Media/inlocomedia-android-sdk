@@ -1,3 +1,11 @@
+v1.10 (25/07/2015)
+===
+* Feature: Support for MoPub Native Ads mediation
+* OnLocationListener replaced with LocationListener
+* Battery Optimizations for Notification Ads
+* Hotfix: ACCESS_WIFI_STATE was still required
+* Small bugfixes
+
 v1.9.3
 ===
 * Removing ACCESS_WIFI_STATE and CHANGE_WIFI_STATE as required permissions.

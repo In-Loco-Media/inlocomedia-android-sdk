@@ -14,9 +14,10 @@ import in.ubee.api.UbeeOptions;
 import in.ubee.api.communication.listeners.RetailsRequestListener;
 import in.ubee.api.exception.UbeeAPIException;
 import in.ubee.api.location.LocationError;
-import in.ubee.api.location.OnLocationListener;
+import in.ubee.api.location.listeners.LocationListener;
 import in.ubee.api.maps.MapViewLoadListener;
 import in.ubee.api.maps.views.IndoorMapView;
+import in.ubee.api.models.Location;
 import in.ubee.models.Retail;
 import in.ubee.models.RetailMap;
 
@@ -25,7 +26,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private IndoorMapView mIndoorMapView;
     private ImageButton mNextFloorButton;
     private ImageButton mPreviousFloorButton;
-    private OnLocationListener mLocationListener;
+    private LocationListener mLocationListener;
     private TextView mLabel;
 
     @Override
@@ -73,18 +74,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
         /**
          * Instantiating the listener to receive the location updates
          */
-        mLocationListener = new OnLocationListener() {
+        mLocationListener = new LocationListener() {
 
             @Override
-            public void onLocationChanged(in.ubee.api.models.Location location) {
+            public void onLocationReceived(final Location location) {
                 mIndoorMapView.setUserLocation(location);
             }
 
             @Override
-            public void onError(LocationError locationError) {
+            public void onLocationError(final LocationError locationError) {
                 Log.w(TAG, "Location Received error: " + locationError.getValue());
             }
-
+            
         };
 
         /**
@@ -154,7 +155,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         /**
          * Registering the context to start receiving location updates
          */
-        Ubee.registerLocationCallback(this, mLocationListener);
+        Ubee.requestMapsLocationUpdates(this, mLocationListener);
     }
 
     @Override
@@ -163,7 +164,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         /**
          * Unregistering the context to stop receiving location updates
          */
-        Ubee.unregisterLocationCallback(this, mLocationListener);
+        Ubee.requestMapsLocationUpdates(this, mLocationListener);
     }
 
     @Override

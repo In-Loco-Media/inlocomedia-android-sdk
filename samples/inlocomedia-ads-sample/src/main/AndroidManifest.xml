@@ -90,29 +90,6 @@
             </intent-filter>
         </receiver>
 
-        <!-- MoPub -->
-
-        <activity android:name="com.mopub.mobileads.MoPubActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name="com.mopub.mobileads.MraidActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name="com.mopub.mobileads.MraidVideoPlayerActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
-
-
-        <!-- Mediation -->
-
-        <activity android:name=".activities.mediation.AdMobDisplayAdsMediationActivity" />
-        <activity android:name=".activities.mediation.AdMobInterstitialAdsMediationActivity" />
-        <activity android:name=".activities.mediation.DFPDisplayAdsMediationActivity" />
-        <activity android:name=".activities.mediation.DFPInterstitialAdsMediationActivity" />
-        <activity android:name=".activities.mediation.MoPubDisplayAdsMediationActivity" />
-        <activity android:name=".activities.mediation.MoPubInterstitialAdsMediationActivity" />
-        <activity
-            android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:theme="@android:style/Theme.Translucent" />
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

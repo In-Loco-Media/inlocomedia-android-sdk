@@ -16,7 +16,7 @@
     <declare-styleable name="ubAdView"><attr format="boolean" name="ubLoadOnAttach"/><attr format="integer|enum" name="ubAutoRefreshInterval"><enum name="disabled" value="0"/><enum name="default_interval" value="60"/><enum name="min_interval" value="30"/><enum name="max_interval" value="120"/></attr><attr format="integer|enum" name="ubTimeout"><enum name="default_timeout" value="20"/><enum name="min_timeout" value="3"/></attr></declare-styleable>
     <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values/dimens.xml -->
     <eat-comment/>
-    <dimen name="ub_button_height">30dip</dimen>
+    <dimen name="ub_button_height">40dip</dimen>
     <dimen name="ub_icon_big">64dip</dimen>
     <dimen name="ub_icon_small">48dip</dimen>
     <dimen name="ub_margin">10dip</dimen>

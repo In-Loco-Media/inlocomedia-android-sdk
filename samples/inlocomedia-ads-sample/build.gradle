@@ -1,14 +1,9 @@
 apply plugin: 'com.android.application'
 
-repositories {
-    // Optional: Used for MoPub demonstration only
-    maven { url "http://minakov.github.io/mopub-sdk-android-aar" }
-}
-
 dependencies {
 
     // Required
-    compile 'com.inlocomedia.android:android-sdk:1.9.+'
+    compile 'com.inlocomedia.android:android-sdk:1.10.0'
 
     // Required
     compile 'com.android.support:support-v4:22.2.0'
@@ -26,17 +21,6 @@ dependencies {
     // Optional: Used for AdFeedRecyclerViewAdapter
     compile 'com.android.support:appcompat-v7:22.2.0'
 
-
-    // AdMob/DFP mediation dependencies
-    // Optional: To access InLocoMedia AdMob mediation jar
-    compile fileTree(dir: 'libs', include: 'inlocomedia-adapters-admob-1.2.4.jar')
-
-
-    // MoPub mediation dependencies
-    // Optional: Sample for MoPub mediation demonstration
-    compile 'com.mopub.mobileads:mopub-android:1.0@aar'
-    // Optional: To access InLocoMedia MoPub mediation jar demonstration
-    compile fileTree(dir: 'libs', include: 'inlocomedia-adapters-admob-1.2.4.jar')
 }
 
 android {
