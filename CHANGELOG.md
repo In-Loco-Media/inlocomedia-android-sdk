@@ -1,3 +1,8 @@
+v1.10.1
+===
+- Hotfix: NativeAd request failure wasn't printing on the log
+- Hotfix: NativeAd request wasn't notifying failures
+
 v1.10 (25/07/2015)
 ===
 * Feature: Support for MoPub Native Ads mediation
