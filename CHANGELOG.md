@@ -1,3 +1,7 @@
+v1.10.2
+===
+- Optimizating Fill Rate with ACESS_WIFI_STATE permission
+
 v1.10.1
 ===
 - Hotfix: NativeAd request failure wasn't printing on the log
