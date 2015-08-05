@@ -1,3 +1,7 @@
+v1.10.3
+===
+- Hotfix: Geocode reverse error
+
 v1.10.2
 ===
 - Optimizating Fill Rate with ACESS_WIFI_STATE permission
