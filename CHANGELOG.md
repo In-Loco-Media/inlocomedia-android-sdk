@@ -1,3 +1,7 @@
+v1.10.4
+===
+- Hotfix: Missing error description when an Internal Error happens while requesting ads
+
 v1.10.3
 ===
 - Hotfix: Geocode reverse error
