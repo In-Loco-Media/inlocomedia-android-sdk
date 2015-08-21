@@ -1,3 +1,7 @@
+v1.10.5
+===
+- Hotfix: Wrong timestamp used for IndoorTimestamp
+
 v1.10.4
 ===
 - Hotfix: Missing error description when an Internal Error happens while requesting ads

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="in.ubee.android"
-    android:versionCode="11004"
-    android:versionName="1.10.4" >
+    android:versionCode="11005"
+    android:versionName="1.10.5" >
 
     <uses-sdk
         android:minSdkVersion="9"
