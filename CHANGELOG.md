@@ -1,3 +1,7 @@
+v1.10.6
+===
+- Hotfix: Unused cached location
+
 v1.10.5
 ===
 - Hotfix: Wrong timestamp used for IndoorTimestamp
