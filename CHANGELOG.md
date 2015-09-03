@@ -1,3 +1,7 @@
+v1.10.7
+===
+- Optimizating GPS provider decision
+
 v1.10.6
 ===
 - Hotfix: Unused cached location
