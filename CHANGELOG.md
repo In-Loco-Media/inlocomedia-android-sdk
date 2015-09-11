@@ -1,3 +1,7 @@
+v1.10.8
+===
+- Hotfix: AdView invalid state on AdContent loading error
+
 v1.10.7
 ===
 - Optimizating GPS provider decision
