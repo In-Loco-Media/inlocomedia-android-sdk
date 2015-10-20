@@ -1,3 +1,7 @@
+v1.10.9
+===
+- Hotfix: Notification error when there was multiple targets on a small radius
+
 v1.10.8
 ===
 - Hotfix: AdView invalid state on AdContent loading error
@@ -97,10 +101,9 @@ v1.7.2
 
 v1.7.1
 ===
-
 * Included required permissions on the sdk manifest for auto merge
 
-v1.7
+v1.7 (11/02/2015)
 ===
 
 * Replacing AdvertisementView with AdView
