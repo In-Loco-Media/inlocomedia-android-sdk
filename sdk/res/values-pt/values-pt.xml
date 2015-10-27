@@ -2,14 +2,15 @@
 <resources>
     <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values-pt/strings.xml -->
     <eat-comment/>
-    <string name="ub_description">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor in</string>
     <string name="ub_error_different_floors">"Você está no %1$s. Vá para o %2$s e trace a rota novamente."</string>
     <string name="ub_error_graph_not_found">"Rota não está disponível."</string>
-    <string name="ub_expiration">Enquanto durarem os estoques.</string>
     <string name="ub_goal_reached">"Você chegou ao seu destino."</string>
-    <string name="ub_highlight">Highlight Text</string>
-    <string name="ub_icon">icon</string>
-    <string name="ub_offer">De <small>R$100,00</small> por <big><b>R$200,00</b></big></string>
-    <string name="ub_text_button">Install</string>
-    <string name="ub_title">Lorem ipsum dollor</string>
+    <string name="ub_store_image_dialog_message">Deseja salvar a imagem na sua Galeria?</string>
+    <string name="ub_store_image_dialog_title">Salvar Imagem</string>
+    <string name="ub_store_image_notification_action">Visualizar imagem</string>
+    <string name="ub_store_image_notification_summary">Toque para visualizar a imagem.</string>
+    <string name="ub_store_image_notification_title">Imagem salva</string>
+    <string name="ub_store_image_toast_downloading">Salvando…</string>
+    <string name="ub_store_image_toast_failure">A imagem não pôde ser salva.</string>
+    <string name="ub_store_image_toast_successful">Imagem salva na Galeria.</string>
 </resources>

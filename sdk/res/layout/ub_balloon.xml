@@ -38,7 +38,7 @@
         android:id="@android:id/text2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/ub_gray_ballon"
+        android:background="@color/ub_gray_balloon"
         android:paddingBottom="7dip"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"

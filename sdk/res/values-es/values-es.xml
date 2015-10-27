@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values-es/strings.xml -->
+    <eat-comment/>
+    <string name="ub_error_different_floors">"Usted está en %1$s. Ir a %2$s y trazar la ruta de nuevo."</string>
+    <string name="ub_error_graph_not_found">"Ruta no está disponible."</string>
+    <string name="ub_goal_reached">"Ha llegado a su destino."</string>
+    <string name="ub_store_image_dialog_message">Usted desea guardar la imagen en su Galería?</string>
+    <string name="ub_store_image_dialog_title">Guardar Imagen</string>
+    <string name="ub_store_image_notification_action">Ver imagen</string>
+    <string name="ub_store_image_notification_summary">Toque para ver la imagen.</string>
+    <string name="ub_store_image_notification_title">Imagen guardada</string>
+    <string name="ub_store_image_toast_downloading">Guardando…</string>
+    <string name="ub_store_image_toast_failure">La imagen no pudo ser salvado.</string>
+    <string name="ub_store_image_toast_successful">Imagen guardada en la Galería.</string>
+</resources>

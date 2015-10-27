@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values-v11/styles.xml -->
+    <eat-comment/>
+    <style name="TextAppearance.ActionBar.Title" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#808080</item>
+    </style>
+    <style name="Theme.UBAdActivity" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme.UBAdActivity.ActionBar" parent="@android:style/Theme.WithActionBar">
+        <item name="android:actionBarStyle">@style/UBActionBar.ActionBar</item>
+    </style>
+    <style name="Theme.UBAdActivity.NoActionBar" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="UBActionBar.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/TextAppearance.ActionBar.Title</item>
+        <item name="android:background">#FAFAFA</item>
+        <item name="android:logo">@drawable/ub_logo_webview_actionbar</item>
+        <item name="android:icon">@drawable/ub_logo_webview_actionbar</item>
+    </style>
+</resources>
