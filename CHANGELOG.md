@@ -1,3 +1,12 @@
+v1.11.1
+===
+- Hotfix: Wrong flow for the first wifi scan on android m
+
+v1.11.0 (25/10/2015)
+===
+- MRAID
+- Support for Android M
+
 v1.10.9
 ===
 - Hotfix: Notification error when there was multiple targets on a small radius
