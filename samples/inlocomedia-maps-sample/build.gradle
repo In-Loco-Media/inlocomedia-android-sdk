@@ -29,5 +29,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.0'
     compile 'com.google.android.gms:play-services-ads:7.5.0'
     compile 'com.google.android.gms:play-services-location:7.5.0'
-    compile 'com.inlocomedia.android:android-sdk:1.10.+'
+    compile 'com.inlocomedia.android:android-sdk:1.11.+'
 }

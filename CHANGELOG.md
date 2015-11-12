@@ -1,3 +1,7 @@
+v1.11.2
+===
+- Hotfix: Proguard obfuscating wrong class 
+
 v1.11.1
 ===
 - Hotfix: Wrong flow for the first wifi scan on android m
