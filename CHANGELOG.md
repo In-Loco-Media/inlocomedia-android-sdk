@@ -1,3 +1,8 @@
+v1.11.3
+===
+- Hotfix: InterstitialAd onCreate error
+- Optimization: Reducing sensors usage on the application start
+
 v1.11.2
 ===
 - Hotfix: Proguard obfuscating wrong class 
