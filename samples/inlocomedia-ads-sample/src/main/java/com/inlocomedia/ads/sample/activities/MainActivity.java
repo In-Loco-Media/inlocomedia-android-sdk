@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
                     NotificationAdRequest request = new NotificationAdRequest();
 
                     // Sets the notification ad resource icon
-                    request.setNotificationIconResourceId(R.drawable.ic_launcher);
+                    request.setNotificationIconResourceId(R.drawable.ic_notification);
 
                     // Enable sounds on the notification
                     request.setSoundEnabled(true);
