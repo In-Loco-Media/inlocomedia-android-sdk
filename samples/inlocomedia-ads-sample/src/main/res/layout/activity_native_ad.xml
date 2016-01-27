@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:gravity="center"
-        android:text="@string/native_list_screen_text"
+        android:text="@string/native_screen_text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <FrameLayout
