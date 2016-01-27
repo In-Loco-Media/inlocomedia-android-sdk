@@ -8,7 +8,8 @@
     <string name="interstitial_list_item_title">Notification</string>
     <string name="main_activitt_list_item_header">Header</string>
 
-    <string name="native_screen_text">Here you will see a native ad as one of the elements of the list (Scroll the list to see)</string>
+    <string name="native_list_screen_text">Here you will see a native ad as one of the elements of the list (Scroll the list to see)</string>
+    <string name="native_screen_text">Here you will see a native ad on the bottom of the screen</string>
 
     <string name="your_app_content">Your app content</string>
     
