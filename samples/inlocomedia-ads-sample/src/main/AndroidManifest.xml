@@ -36,7 +36,11 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.inlocomedia.ads.sample.activities.NativeAdActivity"
+            android:name=".activities.NativeAdActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".activities.NativeAdListActivity"
             android:label="@string/app_name" >
         </activity>
         <activity

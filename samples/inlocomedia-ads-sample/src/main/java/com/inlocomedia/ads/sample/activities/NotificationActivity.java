@@ -21,7 +21,7 @@ public class NotificationActivity extends BaseActivity {
         // Gets the query parameter description that was set on inside the url the NotificationAd creation
         String description = uri.getQueryParameter("description");
 
-		((TextView) findViewById(R.id.tv_title)).setText(title);
-		((TextView) findViewById(R.id.tv_description)).setText(description);
+        ((TextView) findViewById(R.id.tv_title)).setText(title);
+        ((TextView) findViewById(R.id.tv_description)).setText(description);
 	}
 }
