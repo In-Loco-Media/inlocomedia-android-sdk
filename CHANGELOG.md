@@ -1,3 +1,8 @@
+v1.11.5
+===
+- Feature: Age range included on UserProfile
+- Hotfix: Wrong database synchronization monitor
+
 v1.11.4
 ===
 - Hotfix: UserProfile not working properly for Native nor Notification Ads
