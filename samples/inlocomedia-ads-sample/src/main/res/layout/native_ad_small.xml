@@ -1,0 +1,11 @@
+<in.ubee.api.ads.AdView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        style="@style/UBNativeAd"
+                        android:id="@+id/native_ad_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:ubAdType="native_large" >
+
+    <include layout="@layout/ub_native_small"/>
+
+</in.ubee.api.ads.AdView>

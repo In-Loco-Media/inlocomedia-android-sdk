@@ -18,11 +18,12 @@ import android.widget.ToggleButton;
 import com.inlocomedia.ads.sample.R;
 import com.inlocomedia.ads.sample.activities.AdFeedActivity;
 import com.inlocomedia.ads.sample.activities.DisplayAdViewUsingXmlActivity;
+import com.inlocomedia.ads.sample.activities.NativeAdActivity;
 import com.inlocomedia.ads.sample.activities.NotificationActivity;
 import com.inlocomedia.ads.sample.activities.DisplayAdsActivity;
 import com.inlocomedia.ads.sample.activities.InterstitialAdActivity;
 import com.inlocomedia.ads.sample.activities.MainActivity;
-import com.inlocomedia.ads.sample.activities.NativeAdActivity;
+import com.inlocomedia.ads.sample.activities.NativeAdListActivity;
 import com.inlocomedia.ads.sample.activities.util.ListItem;
 
 import java.util.ArrayList;
@@ -61,7 +62,9 @@ public class MainActivityListView extends ListView {
     private ListItem[] nativeItems = {
             new ListItem("Native Small", AdType.NATIVE_SMALL, ListItem.ItemType.NATIVE),
             new ListItem("Native Large", AdType.NATIVE_LARGE, ListItem.ItemType.NATIVE),
-            new ListItem("Native Offer", AdType.NATIVE_OFFER, ListItem.ItemType.NATIVE) };
+            new ListItem("Native Small - List", AdType.NATIVE_SMALL, ListItem.ItemType.NATIVE_LIST),
+            new ListItem("Native Large - List", AdType.NATIVE_LARGE, ListItem.ItemType.NATIVE_LIST),
+            new ListItem("Native Offer", AdType.NATIVE_OFFER, ListItem.ItemType.NATIVE_LIST) };
 
     private ListItem[] notificationItems = {
             new ListItem("Notification", AdType.NOTIFICATION, ListItem.ItemType.NOTIFICATION) };
@@ -132,6 +135,9 @@ public class MainActivityListView extends ListView {
 
                 } else if (item.getType() == ListItem.ItemType.NATIVE) {
                     startActivityWithItem(NativeAdActivity.class, item);
+
+                } else if (item.getType() == ListItem.ItemType.NATIVE_LIST) {
+                    startActivityWithItem(NativeAdListActivity.class, item);
 
                 } else if (item.getType() == ListItem.ItemType.FEED) {
                     startActivity(AdFeedActivity.class);

@@ -18,6 +18,7 @@ public class ListItem implements Serializable {
         DISPLAY_USING_XML,
         INTERSTITIAL,
         NATIVE,
+        NATIVE_LIST,
         NOTIFICATION,
         FEED
     }
