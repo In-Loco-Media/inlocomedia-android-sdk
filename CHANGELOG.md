@@ -1,3 +1,20 @@
+v2.0.0 (23/03/2016)
+===
+- NativeListAdapter: Adapter for native to be easier to put on Lists/RecyclerView
+- Support for AdUnit
+- Easier support to request permissions on Android M when enabling NotificationAds
+- Notification Ads Audio/Vibration events now can be configured on the campaings
+- Improvement on battery life and targeting capacity for NotificationAds
+- Improvement on Viewability detection
+- Many improvements on known errors
+- Hotfix on a few MRAID scenarios
+- Click on Ad is only possible after Viewability is triggered
+- 'in.ubee.api' package was replaced with 'com.inlocomedia.android'. Check the guideline to migrate from v1 to v2
+- AdView lifecycle methods changed
+- AdvertisementView was removed (AdView is being used as default since release 1.6)
+- NativeAd button can now be a regular TextView
+- Removed 'Secret' from the sdk init method
+
 v1.11.5
 ===
 - Feature: Age range included on UserProfile

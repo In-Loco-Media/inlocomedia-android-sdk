@@ -1,4 +1,4 @@
-<in.ubee.api.ads.AdView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.inlocomedia.android.ads.AdView xmlns:android="http://schemas.android.com/apk/res/android"
                         xmlns:app="http://schemas.android.com/apk/res-auto"
                         style="@style/UBNativeAd"
                         android:id="@+id/native_ad_view"
@@ -8,4 +8,4 @@
 
     <include layout="@layout/ub_native_small"/>
 
-</in.ubee.api.ads.AdView>
+</com.inlocomedia.android.ads.AdView>

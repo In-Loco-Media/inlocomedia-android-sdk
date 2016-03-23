@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="in.ubee.android"
-    android:versionCode="11105"
-    android:versionName="1.11.5" >
+    package="com.inlocomedia.android"
+    android:versionCode="20000"
+    android:versionName="2.0.0" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -13,16 +13,16 @@
 
     <application android:allowBackup="true" >
         <service
-            android:name="in.ubee.api.location.LocationService"
+            android:name="com.inlocomedia.android.InLocoMediaService"
             android:exported="false" />
 
         <activity
-            android:name="in.ubee.api.ads.AdActivity"
+            android:name="com.inlocomedia.android.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:hardwareAccelerated="true"
             android:theme="@style/Theme.UBAdActivity" />
         <activity
-            android:name="in.ubee.api.InLocoMediaActivity"
+            android:name="com.inlocomedia.android.InLocoMediaActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@style/Theme.UBAdActivity" />
     </application>

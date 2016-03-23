@@ -7,7 +7,6 @@ import android.os.Handler;
 import android.view.View;
 
 import com.inlocomedia.ads.sample.R;
-import com.inlocomedia.ads.sample.application.InLocoMedia;
 
 public class SplashActivity extends Activity {
 

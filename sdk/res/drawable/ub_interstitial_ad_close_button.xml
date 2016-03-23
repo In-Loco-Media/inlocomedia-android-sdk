@@ -6,4 +6,4 @@
     <item android:drawable="@drawable/ub_interstitial_ad_close_button_pressed" android:state_pressed="true"></item>
     <item android:drawable="@drawable/ub_interstitial_ad_close_button_normal"></item>
 
-</selector><!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/drawable/ub_interstitial_ad_close_button.xml -->
+</selector>

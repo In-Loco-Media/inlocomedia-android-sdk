@@ -1,5 +1,6 @@
 package com.inlocomedia.maps.sample;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
@@ -7,20 +8,21 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.inlocomedia.android.InLocoMedia;
+import com.inlocomedia.android.InLocoMediaOptions;
+import com.inlocomedia.android.core.communication.listeners.RetailsRequestListener;
+import com.inlocomedia.android.exception.InLocoMediaAPIException;
+import com.inlocomedia.android.location.LocationError;
+import com.inlocomedia.android.location.listeners.LocationListener;
+import com.inlocomedia.android.maps.MapViewLoadListener;
+import com.inlocomedia.android.maps.views.IndoorMapView;
+import com.inlocomedia.android.models.Location;
+import com.inlocomedia.android.models.Retail;
+import com.inlocomedia.android.models.RetailMap;
+
 import java.util.List;
 
-import in.ubee.api.Ubee;
-import in.ubee.api.UbeeOptions;
-import in.ubee.api.communication.listeners.RetailsRequestListener;
-import in.ubee.api.exception.UbeeAPIException;
-import in.ubee.api.location.LocationError;
-import in.ubee.api.location.listeners.LocationListener;
-import in.ubee.api.maps.MapViewLoadListener;
-import in.ubee.api.maps.views.IndoorMapView;
-import in.ubee.api.models.Location;
-import in.ubee.models.Retail;
-import in.ubee.models.RetailMap;
-
+@SuppressLint("SetTextI18n")
 public class MainActivity extends Activity implements View.OnClickListener {
     static final String TAG = "InLocoMedia";
     private IndoorMapView mIndoorMapView;
@@ -38,7 +40,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
          * Initializating InLocoMedia SDK
          */
 
-        UbeeOptions options = UbeeOptions.getInstance(this);
+        InLocoMediaOptions options = InLocoMediaOptions.getInstance(this);
         options.setLogEnabled(getResources().getBoolean(R.bool.inlocomedia_maps_sample_logs_enabled));
 
         /**
@@ -47,7 +49,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         options.setMapsKey(getString(R.string.inlocomedia_maps_sample_key),
                            getString(R.string.inlocomedia_maps_sample_secret));
 
-        Ubee.init(this, options);
+        InLocoMedia.init(this, options);
 
         /**
          * Instantiating the layout's views
@@ -91,7 +93,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         /**
          * Requests the list of available retails for the current application
          */
-        Ubee.requestRetails(this, new RetailsRequestListener() {
+        InLocoMedia.requestRetails(this, new RetailsRequestListener() {
 
             @Override
             public void onRequestFinished(List<Retail> retails) {
@@ -127,7 +129,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                         }
 
                         @Override
-                        public void onLoadError(UbeeAPIException e) {
+                        public void onLoadError(InLocoMediaAPIException e) {
                             mLabel.setVisibility(View.VISIBLE);
                             mLabel.setError("Error: " + e.getMessage());
                             Log.w(TAG, "Error: " + e.getMessage(), e);
@@ -142,7 +144,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             }
 
             @Override
-            public void onRequestFailed(UbeeAPIException e) {
+            public void onRequestFailed(InLocoMediaAPIException e) {
                 mLabel.setText("No retail available for this account");
                 Log.w(TAG, "Retails request has failed with error: " + e.getMessage(), e);
             }
@@ -155,7 +157,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         /**
          * Registering the context to start receiving location updates
          */
-        Ubee.requestMapsLocationUpdates(this, mLocationListener);
+        InLocoMedia.requestMapsLocationUpdates(this, mLocationListener);
     }
 
     @Override
@@ -164,7 +166,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         /**
          * Unregistering the context to stop receiving location updates
          */
-        Ubee.requestMapsLocationUpdates(this, mLocationListener);
+        InLocoMedia.requestMapsLocationUpdates(this, mLocationListener);
     }
 
     @Override

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
           package="com.inlocomedia.ads.sample"
           android:versionCode="1"
-          android:versionName="1.0" >
+          android:versionName="1.0">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,6 +16,8 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-sdk tools:overrideLibrary="com.inlocomedia.mediation, com.inlocomedia.android"/>
 
     <application
         android:allowBackup="true"
@@ -36,32 +39,36 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activities.NativeAdActivity"
+            android:name=".activities.ads.natives.NativeAdActivity"
             android:label="@string/app_name">
         </activity>
         <activity
-            android:name=".activities.NativeAdListActivity"
+            android:name=".activities.ads.natives.NativeAdListActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.inlocomedia.ads.sample.activities.DisplayAdsActivity"
+            android:name=".activities.ads.natives.NativeSmallListAdActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".activities.ads.natives.NativeLargeListAdActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".activities.ads.displays.DisplayAdsActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".activities.DisplayAdViewUsingXmlActivity"
+            android:name=".activities.ads.displays.DisplayAdViewUsingXmlActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.inlocomedia.ads.sample.activities.InterstitialAdActivity"
+            android:name=".activities.ads.interstitials.InterstitialAdActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.inlocomedia.ads.sample.activities.AdFeedActivity"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".activities.NotificationActivity"
+            android:name=".activities.ads.notifications.NotificationActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
@@ -76,18 +83,8 @@
 
             </intent-filter>
         </activity>
-
-        <service
-            android:name="in.ubee.api.location.LocationService"
-            android:exported="false" />
-
-        <activity
-            android:name="in.ubee.api.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:theme="@style/Theme.UBAdActivity" />
-
         <receiver
-            android:name="in.ubee.api.ads.AdReceiver"
+            android:name="com.inlocomedia.android.InLocoMediaReceiver"
             android:exported="false" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

@@ -1,5 +1,15 @@
 apply plugin: 'com.android.application'
 
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.google.android.gms:play-services-ads:8.3.0'
+    compile 'com.google.android.gms:play-services-location:8.3.0'
+    compile 'com.inlocomedia.android:android-sdk:1.11.+'
+}
+
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
@@ -22,13 +32,4 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-}
-
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:support-v4:23.1.1'
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.google.android.gms:play-services-ads:8.3.0'
-    compile 'com.google.android.gms:play-services-location:8.3.0'
-    compile 'com.inlocomedia.android:android-sdk:1.11.+'
 }

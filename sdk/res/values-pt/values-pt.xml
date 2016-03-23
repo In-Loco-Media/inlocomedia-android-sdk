@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values-pt/strings.xml -->
-    <eat-comment/>
     <string name="ub_error_different_floors">"Você está no %1$s. Vá para o %2$s e trace a rota novamente."</string>
     <string name="ub_error_graph_not_found">"Rota não está disponível."</string>
     <string name="ub_goal_reached">"Você chegou ao seu destino."</string>

@@ -6,10 +6,10 @@ import android.view.View;
 
 import com.inlocomedia.ads.sample.R;
 import com.inlocomedia.ads.sample.views.MainActivityListView;
+import com.inlocomedia.android.InLocoMedia;
+import com.inlocomedia.android.InLocoMediaOptions;
+import com.inlocomedia.android.ads.notification.NotificationAdRequest;
 
-import in.ubee.api.Ubee;
-import in.ubee.api.UbeeOptions;
-import in.ubee.api.ads.notification.NotificationAdRequest;
 
 public class MainActivity extends Activity {
 
@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         // Initializing InLocoMedia Options. Put it on your first activity
-        UbeeOptions options = UbeeOptions.getInstance(this);
+        InLocoMediaOptions options = InLocoMediaOptions.getInstance(this);
 
         // The deviceId can be obtained by viewing the logcat output after creating a new ad:
         options.setDevelopmentDevices();
@@ -32,11 +32,10 @@ public class MainActivity extends Activity {
          * App key - App User Id from ubee - find in http://inlocomedia.com/
          * App Secret - App Secret from ubee - find in http://inlocomedia.com/
          */
-        options.setAdsKey(getString(R.string.inlocomedia_ads_sample_key),
-                          getString(R.string.inlocomedia_ads_sample_secret));
+        options.setAdsKey(getString(R.string.inlocomedia_ads_sample_key));
 
         // Initializating the InLocoMedia SDK. Put this on your first activity
-        Ubee.init(this, options);
+        InLocoMedia.init(this, options);
 
         // Sets the layout that contains the access to each Ad usage available for the SDK
         setContentView(R.layout.activity_new_main);
@@ -47,23 +46,17 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
 
-                if (!Ubee.isNotificationAdEnabled(MainActivity.this)) {
+                if (!InLocoMedia.isNotificationAdEnabled(MainActivity.this)) {
 
                     NotificationAdRequest request = new NotificationAdRequest();
 
                     // Sets the notification ad resource icon
                     request.setNotificationIconResourceId(R.drawable.ic_notification);
 
-                    // Enable sounds on the notification
-                    request.setSoundEnabled(true);
-
-                    // Enables vibration when the notification is received
-                    request.setVibrationEnabled(true);
-
                     // Set the requests with the notification parameters
-                    Ubee.setNotificationAdRequest(MainActivity.this, request);
+                    InLocoMedia.setNotificationAdRequest(MainActivity.this, request);
                 }
-                Ubee.setNotificationAdEnabled(MainActivity.this, !Ubee.isNotificationAdEnabled(MainActivity.this));
+                InLocoMedia.setNotificationAdEnabled(MainActivity.this, !InLocoMedia.isNotificationAdEnabled(MainActivity.this));
             }
         });
     }

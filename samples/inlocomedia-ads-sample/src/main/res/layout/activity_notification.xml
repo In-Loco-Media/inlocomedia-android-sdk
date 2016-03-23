@@ -28,11 +28,11 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#fff" />
 
-    <in.ubee.android.view.AdvertisementView
+    <com.inlocomedia.android.ads.AdView
         style="@style/UBNativeAd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:ubAdType="native_small" >
-    </in.ubee.android.view.AdvertisementView>
+    </com.inlocomedia.android.ads.AdView>
 
 </LinearLayout>

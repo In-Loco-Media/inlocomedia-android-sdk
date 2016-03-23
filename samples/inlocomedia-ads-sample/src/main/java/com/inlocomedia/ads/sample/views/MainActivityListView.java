@@ -16,22 +16,21 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.inlocomedia.ads.sample.R;
-import com.inlocomedia.ads.sample.activities.AdFeedActivity;
-import com.inlocomedia.ads.sample.activities.DisplayAdViewUsingXmlActivity;
-import com.inlocomedia.ads.sample.activities.NativeAdActivity;
-import com.inlocomedia.ads.sample.activities.NotificationActivity;
-import com.inlocomedia.ads.sample.activities.DisplayAdsActivity;
-import com.inlocomedia.ads.sample.activities.InterstitialAdActivity;
 import com.inlocomedia.ads.sample.activities.MainActivity;
-import com.inlocomedia.ads.sample.activities.NativeAdListActivity;
-import com.inlocomedia.ads.sample.activities.util.ListItem;
+import com.inlocomedia.ads.sample.activities.ads.displays.DisplayAdViewUsingXmlActivity;
+import com.inlocomedia.ads.sample.activities.ads.displays.DisplayAdsActivity;
+import com.inlocomedia.ads.sample.activities.ads.interstitials.InterstitialAdActivity;
+import com.inlocomedia.ads.sample.activities.ads.natives.NativeAdActivity;
+import com.inlocomedia.ads.sample.activities.ads.natives.NativeLargeListAdActivity;
+import com.inlocomedia.ads.sample.activities.ads.natives.NativeSmallListAdActivity;
+import com.inlocomedia.ads.sample.activities.ads.notifications.NotificationActivity;
+import com.inlocomedia.ads.sample.views.util.ListItem;
+import com.inlocomedia.android.InLocoMedia;
+import com.inlocomedia.android.ads.AdType;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import in.ubee.api.Ubee;
-import in.ubee.api.ads.AdType;
 
 /**
  * Create by: gabriel
@@ -42,38 +41,33 @@ public class MainActivityListView extends ListView {
 
     private MainActivityListAdapter mAdapter;
 
-    private ListItem[] displayItems = {
-            new ListItem("Display Banner Small", AdType.DISPLAY_BANNER_SMALL, ListItem.ItemType.DISPLAY),
-            new ListItem("Display Banner Small Landscape", AdType.DISPLAY_BANNER_SMALL_LANDSCAPE, ListItem.ItemType.DISPLAY),
-            new ListItem("Display Banner Large", AdType.DISPLAY_BANNER_LARGE, ListItem.ItemType.DISPLAY),
-            new ListItem("Display Banner Full IAB", AdType.DISPLAY_BANNER_FULL_IAB, ListItem.ItemType.DISPLAY),
-            new ListItem("Display Banner Medium Rectangle", AdType.DISPLAY_BANNER_MEDIUM_RECTANGLE, ListItem.ItemType.DISPLAY),
-            new ListItem("Display Banner Tablet", AdType.DISPLAY_BANNER_TABLET, ListItem.ItemType.DISPLAY),
-            new ListItem("Display Banner Tile", AdType.DISPLAY_TILE, ListItem.ItemType.DISPLAY),
-            new ListItem("Display Smart Banner", AdType.SMART_BANNER, ListItem.ItemType.DISPLAY),
-            new ListItem("Display Banner Large using Xml", ListItem.ItemType.DISPLAY_USING_XML)};
+    private ListItem[] displayItems = {new ListItem("Display Banner Small", AdType.DISPLAY_BANNER_SMALL, ListItem.ItemType.DISPLAY),
+                                       new ListItem("Display Banner Small Landscape",
+                                                    AdType.DISPLAY_BANNER_SMALL_LANDSCAPE,
+                                                    ListItem.ItemType.DISPLAY),
+                                       new ListItem("Display Banner Large", AdType.DISPLAY_BANNER_LARGE, ListItem.ItemType.DISPLAY),
+                                       new ListItem("Display Banner Full IAB", AdType.DISPLAY_BANNER_FULL_IAB, ListItem.ItemType.DISPLAY),
+                                       new ListItem("Display Banner Medium Rectangle",
+                                                    AdType.DISPLAY_BANNER_MEDIUM_RECTANGLE,
+                                                    ListItem.ItemType.DISPLAY),
+                                       new ListItem("Display Banner Tablet", AdType.DISPLAY_BANNER_TABLET, ListItem.ItemType.DISPLAY),
+                                       new ListItem("Display Banner Tile", AdType.DISPLAY_TILE, ListItem.ItemType.DISPLAY),
+                                       new ListItem("Display Smart Banner", AdType.SMART_BANNER, ListItem.ItemType.DISPLAY),
+                                       new ListItem("Display Banner Large using Xml", ListItem.ItemType.DISPLAY_USING_XML)};
 
-    private ListItem[] customUsage = {
-            new ListItem("Feed", ListItem.ItemType.FEED) };
+    private ListItem[] interstitialItems = {new ListItem("Interstitial", ListItem.ItemType.INTERSTITIAL)};
 
-    private ListItem[] interstitialItems = {
-            new ListItem("Interstitial", ListItem.ItemType.INTERSTITIAL) };
+    private ListItem[] nativeItems = {new ListItem("Native Small", AdType.NATIVE_SMALL, ListItem.ItemType.NATIVE),
+                                      new ListItem("Native Large", AdType.NATIVE_LARGE, ListItem.ItemType.NATIVE),
+                                      new ListItem("Native Small - List", AdType.NATIVE_SMALL, ListItem.ItemType.NATIVE_LIST),
+                                      new ListItem("Native Large - List", AdType.NATIVE_LARGE, ListItem.ItemType.NATIVE_LIST)};
 
-    private ListItem[] nativeItems = {
-            new ListItem("Native Small", AdType.NATIVE_SMALL, ListItem.ItemType.NATIVE),
-            new ListItem("Native Large", AdType.NATIVE_LARGE, ListItem.ItemType.NATIVE),
-            new ListItem("Native Small - List", AdType.NATIVE_SMALL, ListItem.ItemType.NATIVE_LIST),
-            new ListItem("Native Large - List", AdType.NATIVE_LARGE, ListItem.ItemType.NATIVE_LIST),
-            new ListItem("Native Offer", AdType.NATIVE_OFFER, ListItem.ItemType.NATIVE_LIST) };
-
-    private ListItem[] notificationItems = {
-            new ListItem("Notification", AdType.NOTIFICATION, ListItem.ItemType.NOTIFICATION) };
+    private ListItem[] notificationItems = {new ListItem("Notification", AdType.NOTIFICATION, ListItem.ItemType.NOTIFICATION)};
 
     private ListItem displayHeader = new ListItem("Display Ads", ListItem.ItemType.HEADER);
     private ListItem interstitialHeader = new ListItem("Interstitial Ads", ListItem.ItemType.HEADER);
     private ListItem nativeHeader = new ListItem("Native Ads", ListItem.ItemType.HEADER);
     private ListItem notificationHeader = new ListItem("Notification", ListItem.ItemType.HEADER);
-    private ListItem othersHeader = new ListItem("Custom Usage", ListItem.ItemType.HEADER);
 
     private List<ListItem> mListItems = new ArrayList<>();
 
@@ -112,9 +106,6 @@ public class MainActivityListView extends ListView {
         mListItems.add(notificationHeader);
         Collections.addAll(mListItems, notificationItems);
 
-        mListItems.add(othersHeader);
-        Collections.addAll(mListItems, customUsage);
-
         this.setOnItemClickListener(new OnItemClickListener() {
 
             @Override
@@ -133,14 +124,14 @@ public class MainActivityListView extends ListView {
                 } else if (item.getType() == ListItem.ItemType.DISPLAY_USING_XML) {
                     startActivity(DisplayAdViewUsingXmlActivity.class);
 
+                } else if (item.getType() == ListItem.ItemType.NATIVE_LIST && item.getAdType() == AdType.NATIVE_SMALL) {
+                    startActivityWithItem(NativeSmallListAdActivity.class, item);
+
+                } else if (item.getType() == ListItem.ItemType.NATIVE_LIST && item.getAdType() == AdType.NATIVE_LARGE) {
+                    startActivityWithItem(NativeLargeListAdActivity.class, item);
+
                 } else if (item.getType() == ListItem.ItemType.NATIVE) {
                     startActivityWithItem(NativeAdActivity.class, item);
-
-                } else if (item.getType() == ListItem.ItemType.NATIVE_LIST) {
-                    startActivityWithItem(NativeAdListActivity.class, item);
-
-                } else if (item.getType() == ListItem.ItemType.FEED) {
-                    startActivity(AdFeedActivity.class);
                 }
             }
         });
@@ -171,7 +162,7 @@ public class MainActivityListView extends ListView {
         private OnClickListener mNotificationClickListener;
 
         public enum RowType {
-            NOTIFICATION, LIST_ITEM, HEADER_ITEM;
+            NOTIFICATION, LIST_ITEM, HEADER_ITEM
         }
 
         private MainActivityListAdapter(final List<ListItem> listItems) {
@@ -223,7 +214,7 @@ public class MainActivityListView extends ListView {
 
             if (mItems.get(position).getType() == ListItem.ItemType.NOTIFICATION) {
                 ToggleButton notificationToggleButton = ((ToggleButton) convertView.findViewById(R.id.notification_switch));
-                notificationToggleButton.setChecked(Ubee.isNotificationAdEnabled(convertView.getContext()));
+                notificationToggleButton.setChecked(InLocoMedia.isNotificationAdEnabled(convertView.getContext()));
                 notificationToggleButton.setOnClickListener(mNotificationClickListener);
             }
 

@@ -65,7 +65,7 @@
         android:padding="@dimen/ub_margin_small" >
 
         <Button
-            android:id="@id/ub_button"
+            android:id="@id/ub_call_to_action"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/ub_button_height"
             android:layout_gravity="end"

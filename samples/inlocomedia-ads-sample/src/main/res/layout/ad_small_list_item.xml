@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<in.ubee.api.ads.AdView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/UBNativeAd"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:ubAdType="native_small" >
-    
+<com.inlocomedia.android.ads.nativeads.AdAdapterItemView android:id="@id/ub_native_ad"
+                                                         style="@style/UBNativeAd"
+                                                         xmlns:android="http://schemas.android.com/apk/res/android"
+                                                         android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content">
+
+    <!-- Native Layout example. You can create your own -->
     <include layout="@layout/ub_native_small"/>
 
-</in.ubee.api.ads.AdView>
+</com.inlocomedia.android.ads.nativeads.AdAdapterItemView>

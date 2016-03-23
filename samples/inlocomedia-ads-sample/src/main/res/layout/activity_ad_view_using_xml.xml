@@ -14,13 +14,12 @@
         android:text="@string/display_ad_screen_text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <in.ubee.api.ads.AdView
+    <com.inlocomedia.android.ads.AdView
         android:id="@+id/ad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|bottom"
-        app:ubLoadOnAttach="true"
         app:ubAdType="display_banner_large">
-    </in.ubee.api.ads.AdView>
+    </com.inlocomedia.android.ads.AdView>
 
 </FrameLayout>
