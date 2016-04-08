@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<in.ubee.api.ads.AdView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.inlocomedia.android.ads.AdView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/UBNativeAd"
+    style="@style/Widget.InLocoMedia.NativeAd"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:ubAdType="native_offer" >
+    app:ilmAdType="native_offer" >
 
-    <include layout="@layout/ub_native_offer" />
+    <include layout="@layout/ilm_native_offer" />
 
-</in.ubee.api.ads.AdView>
+</com.inlocomedia.android.ads.AdView>

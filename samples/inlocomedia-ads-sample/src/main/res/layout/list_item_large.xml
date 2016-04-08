@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:orientation="vertical"
-    android:padding="@dimen/ub_margin">
+    android:padding="@dimen/ilm_margin">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -12,7 +12,7 @@
         android:orientation="horizontal" >
 
         <ImageView
-            android:id="@id/ub_icon"
+            android:id="@id/ilm_icon"
             android:layout_width="60dip"
             android:layout_height="60dip"
             android:background="@color/gray_light"
@@ -21,8 +21,8 @@
         <LinearLayout
             android:layout_width="0dip"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/ub_margin"
-            android:layout_marginStart="@dimen/ub_margin"
+            android:layout_marginLeft="@dimen/ilm_margin"
+            android:layout_marginStart="@dimen/ilm_margin"
             android:layout_weight="1"
             android:orientation="vertical" >
 
@@ -31,34 +31,34 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
-                android:text="@string/ub_title"
+                android:text="@string/ilm_title"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@id/ub_highlight"
+                android:id="@id/ilm_highlight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dip"
-                android:text="@string/ub_highlight"
-                android:textColor="@color/ub_green_highlight" />
+                android:text="@string/ilm_highlight"
+                android:textColor="@color/ilm_green_highlight" />
         </LinearLayout>
     </LinearLayout>
 
     <TextView
-        android:id="@id/ub_description"
+        android:id="@id/ilm_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/ub_margin"
-        android:layout_marginTop="@dimen/ub_margin"
-        android:text="@string/ub_description" />
+        android:layout_marginBottom="@dimen/ilm_margin"
+        android:layout_marginTop="@dimen/ilm_margin"
+        android:text="@string/ilm_description" />
 
     <ImageView
-        android:id="@id/ub_image"
+        android:id="@id/ilm_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@color/gray_light"
         android:scaleType="centerInside"
-        android:src="@drawable/ub_native_ad_large_placeholder" />
+        android:src="@drawable/ilm_native_ad_large_placeholder" />
 
 </LinearLayout>

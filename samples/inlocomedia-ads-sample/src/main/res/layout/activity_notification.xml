@@ -29,10 +29,10 @@
         android:textColor="#fff" />
 
     <com.inlocomedia.android.ads.AdView
-        style="@style/UBNativeAd"
+        style="@style/Widget.InLocoMedia.NativeAd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:ubAdType="native_small" >
+        app:ilmAdType="native_small" >
     </com.inlocomedia.android.ads.AdView>
 
 </LinearLayout>

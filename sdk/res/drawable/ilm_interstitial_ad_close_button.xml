@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--  Warning: Do not rename this file "ilm_interstitial_ad_close_button" -->
+    
+    <item android:drawable="@drawable/ilm_interstitial_ad_close_button_pressed" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/ilm_interstitial_ad_close_button_normal"></item>
+
+</selector>

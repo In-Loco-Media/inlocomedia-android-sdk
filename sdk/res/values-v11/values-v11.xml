@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.InLocoMedia.ActionBar.Title" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#808080</item>
+    </style>
+    <style name="Theme.InLocoMedia.ActionBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/Widget.InLocoMedia.ActionBar</item>
+    </style>
+    <style name="Theme.InLocoMedia.NoActionBar" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme.InLocoMedia.NoActionBar.Fullscreen" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Widget.InLocoMedia.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/TextAppearance.InLocoMedia.ActionBar.Title</item>
+        <item name="android:background">#FAFAFA</item>
+        <item name="android:logo">@drawable/ilm_actionbar_minibrowser_logo</item>
+        <item name="android:icon">@drawable/ilm_actionbar_minibrowser_logo</item>
+    </style>
+</resources>

@@ -1,3 +1,11 @@
+v2.1.0 (08/04/2016)
+===
+- Updating Protocol Buffers to 2.6.1
+- Replaced the identifiers for ub to ilm that were missing on last release
+- NativeAd default style replaced from UBNativeAd to Widget.InLocoMedia.NativeAd
+- Location initialization error that was causing the device to be unable to locate for a session
+- Optimizating Visit Tracker
+
 v2.0.0 (23/03/2016)
 ===
 - NativeListAdapter: Adapter for native to be easier to put on Lists/RecyclerView
