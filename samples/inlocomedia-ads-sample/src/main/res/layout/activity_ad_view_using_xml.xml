@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|bottom"
-        app:ubAdType="display_banner_large">
+        app:ilmAdType="display_banner_large">
     </com.inlocomedia.android.ads.AdView>
 
 </FrameLayout>

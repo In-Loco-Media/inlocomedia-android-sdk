@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="200dip"
     android:layout_height="wrap_content"
-    android:background="@drawable/ub_balloon"
+    android:background="@drawable/ilm_balloon"
     android:orientation="vertical" >
 
     <LinearLayout
@@ -31,14 +31,14 @@
             android:layout_height="wrap_content"
             android:contentDescription="@null"
             android:padding="10dip"
-            android:src="@drawable/ub_button_route" />
+            android:src="@drawable/ilm_button_route" />
     </LinearLayout>
 
     <TextView
         android:id="@android:id/text2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/ub_gray_balloon"
+        android:background="@color/ilm_gray_balloon"
         android:paddingBottom="7dip"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"

@@ -4,49 +4,49 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:paddingLeft="@dimen/ub_margin" 
-    android:paddingRight="@dimen/ub_margin" 
-    android:paddingTop="@dimen/ub_margin_small" 
-    android:paddingBottom="@dimen/ub_margin_small" >
+    android:paddingLeft="@dimen/ilm_margin" 
+    android:paddingRight="@dimen/ilm_margin" 
+    android:paddingTop="@dimen/ilm_margin_small" 
+    android:paddingBottom="@dimen/ilm_margin_small" >
 
     <ImageView
-        android:id="@id/ub_image"
-        android:layout_width="@dimen/ub_icon_small"
-        android:layout_height="@dimen/ub_icon_small"
-        android:contentDescription="@string/ub_icon"
-        android:src="@drawable/ub_native_ad_small_icon_placeholder" />
+        android:id="@id/ilm_image"
+        android:layout_width="@dimen/ilm_icon_small"
+        android:layout_height="@dimen/ilm_icon_small"
+        android:contentDescription="@string/ilm_icon"
+        android:src="@drawable/ilm_native_ad_small_icon_placeholder" />
 
     <RelativeLayout
         android:layout_width="0dip"
         android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/ub_margin"
-        android:layout_marginRight="@dimen/ub_margin"
+        android:layout_marginLeft="@dimen/ilm_margin"
+        android:layout_marginRight="@dimen/ilm_margin"
         android:layout_weight="1"
         android:orientation="vertical" >
 
         <TextView
-            android:id="@id/ub_title"
+            android:id="@id/ilm_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:singleLine="true"
-            android:text="@string/ub_title" />
+            android:text="@string/ilm_title" />
 
         <TextView
-            android:id="@id/ub_highlight"
+            android:id="@id/ilm_highlight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
              android:layout_alignParentLeft="true"
-            android:layout_below="@id/ub_title"
+            android:layout_below="@id/ilm_title"
             android:singleLine="true"
-            android:text="@string/ub_highlight" />
+            android:text="@string/ilm_highlight" />
     </RelativeLayout>
 
     <Button
-        android:id="@id/ub_call_to_action"
+        android:id="@id/ilm_call_to_action"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/ub_button_height"
+        android:layout_height="@dimen/ilm_button_height"
         android:padding="5dip"
-        android:text="@string/ub_text_button" />
+        android:text="@string/ilm_text_button" />
 
 </LinearLayout>

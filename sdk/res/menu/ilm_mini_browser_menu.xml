@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:tools="http://schemas.android.com/tools">
     <item
-        android:id="@+id/ub_action_share"
+        android:id="@+id/ilm_action_share"
         android:icon="@android:drawable/ic_menu_share"
         android:showAsAction="collapseActionView"
-        android:title="@string/ub_menu_share"
+        android:title="@string/ilm_menu_share"
         tools:ignore="AppCompatResource"/>
 
     <item
-        android:id="@+id/ub_action_open_browser"
+        android:id="@+id/ilm_action_open_browser"
         android:icon="@android:drawable/ic_menu_set_as"
         android:showAsAction="collapseActionView"
-        android:title="@string/ub_menu_open_browser"
+        android:title="@string/ilm_menu_open_browser"
         tools:ignore="AppCompatResource"/>
 
 </menu>
