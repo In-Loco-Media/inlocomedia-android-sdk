@@ -50,6 +50,8 @@ public class MainActivity extends Activity {
 
                     NotificationAdRequest request = new NotificationAdRequest();
 
+                    request.setAskForPermissionEnabled(true);
+
                     // Sets the notification ad resource icon
                     request.setNotificationIconResourceId(R.drawable.ic_notification);
 
