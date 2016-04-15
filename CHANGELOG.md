@@ -1,3 +1,7 @@
+v2.1.1
+===
+- Hotfix: Minimum version for the sdk was wrong on the previous version. Returning to 9
+
 v2.1.0 (08/04/2016)
 ===
 - Updating Protocol Buffers to 2.6.1

@@ -94,6 +94,9 @@ public class MainActivityListView extends ListView {
 
     private void init() {
 
+        mListItems.add(notificationHeader);
+        Collections.addAll(mListItems, notificationItems);
+
         mListItems.add(displayHeader);
         Collections.addAll(mListItems, displayItems);
 
@@ -102,9 +105,6 @@ public class MainActivityListView extends ListView {
 
         mListItems.add(nativeHeader);
         Collections.addAll(mListItems, nativeItems);
-
-        mListItems.add(notificationHeader);
-        Collections.addAll(mListItems, notificationItems);
 
         this.setOnItemClickListener(new OnItemClickListener() {
 

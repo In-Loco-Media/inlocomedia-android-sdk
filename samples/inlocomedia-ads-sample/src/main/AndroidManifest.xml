@@ -43,10 +43,6 @@
             android:label="@string/app_name">
         </activity>
         <activity
-            android:name=".activities.ads.natives.NativeAdListActivity"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
             android:name=".activities.ads.natives.NativeSmallListAdActivity"
             android:label="@string/app_name">
         </activity>
