@@ -1,3 +1,7 @@
+v2.1.2
+===
+- Hotfix: AndroidManifest.xml file was missing the InLocoMediaReceiver class
+
 v2.1.1
 ===
 - Hotfix: Minimum version for the sdk was wrong on the previous version. Returning to 9
