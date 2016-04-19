@@ -1,3 +1,7 @@
+v2.1.3
+===
+- Hotfix: Wifi error when the value from the scan was null
+
 v2.1.2
 ===
 - Hotfix: AndroidManifest.xml file was missing the InLocoMediaReceiver class
