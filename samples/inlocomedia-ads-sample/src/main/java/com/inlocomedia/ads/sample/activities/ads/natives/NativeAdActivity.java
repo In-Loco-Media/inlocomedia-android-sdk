@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.inlocomedia.ads.sample.R;
 import com.inlocomedia.ads.sample.activities.MainActivity;
+import com.inlocomedia.ads.sample.views.util.BaseActivity;
 import com.inlocomedia.ads.sample.views.util.ListItem;
 import com.inlocomedia.android.ads.AdError;
 import com.inlocomedia.android.ads.AdRequest;
@@ -23,7 +24,7 @@ import com.inlocomedia.android.ads.AdViewListener;
  * Time: 2:25 PM
  */
 @SuppressLint("SetTextI18n")
-public class NativeAdActivity extends Activity {
+public class NativeAdActivity extends BaseActivity {
     private AdView mAdView;
 
     @Override
