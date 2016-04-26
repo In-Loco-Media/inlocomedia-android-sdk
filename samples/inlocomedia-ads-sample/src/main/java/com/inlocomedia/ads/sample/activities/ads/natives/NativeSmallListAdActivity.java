@@ -6,6 +6,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.inlocomedia.ads.sample.R;
+import com.inlocomedia.ads.sample.views.util.BaseActivity;
 import com.inlocomedia.android.ads.AdRequest;
 import com.inlocomedia.android.ads.nativeads.adapters.NativeAdListAdapter;
 
@@ -16,7 +17,7 @@ import java.util.ArrayList;
  * Date: 3/23/16
  * Time: 10:46 AM
  */
-public class NativeSmallListAdActivity extends Activity {
+public class NativeSmallListAdActivity extends BaseActivity {
 
     private NativeAdListAdapter mAdAdapter;
 

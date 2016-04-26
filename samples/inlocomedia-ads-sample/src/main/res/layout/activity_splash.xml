@@ -19,7 +19,7 @@
         android:layout_gravity="center"
         android:layout_weight="2.6"
         android:padding="@dimen/margin_triple"
-        android:src="@drawable/splash_ic_ubee" />
+        android:src="@drawable/splash_ic" />
 
     <View
         android:layout_width="wrap_content"
