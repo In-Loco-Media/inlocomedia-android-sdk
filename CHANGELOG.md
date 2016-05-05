@@ -1,3 +1,7 @@
+v2.1.4
+===
+- Hotfix: Errors when storing location data to upload later
+
 v2.1.3
 ===
 - Hotfix: Wifi error when the value from the scan was null
