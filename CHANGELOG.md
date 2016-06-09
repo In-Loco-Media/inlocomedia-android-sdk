@@ -1,3 +1,15 @@
+v2.2.0 (09/06/2016)
+===
+### Features:
+- Custom Ads
+- Better customization on location profile
+- New app install tracker for stores outside google play
+- AdRequest with tag filtering
+
+### Fix:
+- Release that wasn't accepting .+ versions on gradle
+- DevelopmentDevices error that was keeping the app in development mode even after removing the device id
+
 v2.1.4
 ===
 - Hotfix: Errors when storing location data to upload later
