@@ -1,6 +1,11 @@
+v2.2.1
+===
+### Hotfix:
+- Methods being called without the required permission
+
 v2.2.0 (09/06/2016)
 ===
-### Features:
+### Feature:
 - Custom Ads
 - Better customization on location profile
 - New app install tracker for stores outside google play
