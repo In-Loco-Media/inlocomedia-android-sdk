@@ -1,3 +1,8 @@
+v2.2.2
+===
+### Hotfix:
+- Fixed error on the application custom configuration request when it was missing the application id
+
 v2.2.1
 ===
 ### Hotfix:
