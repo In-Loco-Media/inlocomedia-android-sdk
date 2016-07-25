@@ -1,3 +1,9 @@
+Release 2.2.3 (21/07/2016)
+===
+
+### Fixed:
+- Prevented cursor leaks
+
 v2.2.2
 ===
 ### Hotfix:
