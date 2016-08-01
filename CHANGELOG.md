@@ -1,3 +1,9 @@
+Release 2.2.4 (01/08/2016)
+===
+
+### Fixed:
+- Removing user applications collector
+
 Release 2.2.3 (21/07/2016)
 ===
 
