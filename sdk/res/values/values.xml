@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values/colors.xml -->
-    <eat-comment/>
     <color name="ub_black_translucent">#E6000000</color>
     <color name="ub_gray_background">#F9F9F9</color>
     <color name="ub_gray_balloon">#1D272F</color>
@@ -14,16 +12,12 @@
     <declare-styleable name="IndoorMapView"><attr format="reference" name="ubStoreColor"/><attr format="reference" name="ubHighlightColor"/><attr format="reference" name="ubTextColor"/><attr format="reference" name="ubRouteColor"/><attr format="color" name="ubHallColor"/><attr format="reference" name="ubBalloonLayout"/><attr format="reference" name="ubCloseButton"/></declare-styleable>
     <declare-styleable name="ubAdView"><attr format="boolean" name="ubLoadOnAttach"/><attr format="integer|enum" name="ubAutoRefreshInterval"><enum name="disabled" value="0"/><enum name="default_interval" value="60"/><enum name="min_interval" value="30"/><enum name="max_interval" value="120"/></attr><attr format="integer|enum" name="ubTimeout"><enum name="default_timeout" value="20"/><enum name="min_timeout" value="3"/></attr></declare-styleable>
     <declare-styleable name="ubBaseAdView"><attr format="enum" name="ubAdType"><enum name="display_smart_banner" value="0"/><enum name="native_small" value="100"/><enum name="native_large" value="101"/><enum name="native_offer" value="102"/><enum name="display_banner_small" value="200"/><enum name="display_banner_small_landscape" value="201"/><enum name="display_banner_large" value="202"/><enum name="display_banner_full_iab" value="203"/><enum name="display_banner_medium_rectangle" value="204"/><enum name="display_banner_tablet" value="205"/><enum name="display_tile" value="206"/><enum name="display_fullscreen" value="300"/><enum name="display_fullscreen_landscape" value="301"/><enum name="display_fullscreen_tablet" value="302"/><enum name="display_fullscreen_tablet_landscape" value="303"/></attr><attr format="boolean" name="ubCloseEnabled"/><attr format="enum" name="ubCloseButtonGravity"><enum name="top" value="0x30"/><enum name="bottom" value="0x50"/><enum name="right" value="0x05"/><enum name="left" value="0x03"/><enum name="center" value="0x11"/></attr><attr format="dimension" name="ubCloseButtonPadding"/><attr format="reference" name="ubTitleTextStyle"/><attr format="reference" name="ubDescriptionTextStyle"/><attr format="reference" name="ubHighlightTextStyle"/><attr format="reference" name="ubButtonTextStyle"/><attr format="reference" name="ubOfferTextStyle"/><attr format="reference" name="ubExpirationTextStyle"/><attr format="reference|color" name="ubBackgroundButton"/></declare-styleable>
-    <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values/dimens.xml -->
-    <eat-comment/>
     <dimen name="ub_button_height">40dip</dimen>
     <dimen name="ub_icon_big">64dip</dimen>
     <dimen name="ub_icon_small">48dip</dimen>
     <dimen name="ub_margin">10dip</dimen>
     <dimen name="ub_margin_large">16dip</dimen>
     <dimen name="ub_margin_small">6dip</dimen>
-    <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values/ids.xml -->
-    <eat-comment/>
     <item name="ub_button" type="id"/>
     <item name="ub_description" type="id"/>
     <item name="ub_expiration" type="id"/>
@@ -32,8 +26,6 @@
     <item name="ub_image" type="id"/>
     <item name="ub_offer" type="id"/>
     <item name="ub_title" type="id"/>
-    <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values/strings.xml -->
-    <eat-comment/>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ub_description">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor in</string>
     <string name="ub_error_different_floors">"You are in %1$s. Go to %2$s and trace the route again."</string>
@@ -53,8 +45,6 @@
     <string name="ub_store_image_toast_successful">The picture has been saved on your Gallery.</string>
     <string name="ub_text_button">Install</string>
     <string name="ub_title">Lorem ipsum dollor</string>
-    <!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/values/styles.xml -->
-    <eat-comment/>
     <style name="Theme.UBAdActivity" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
     <style name="Theme.UBAdActivity.ActionBar" parent="@android:style/Theme.Light"/>
     <style name="Theme.UBAdActivity.NoActionBar" parent="@android:style/Theme.Translucent.NoTitleBar"/>

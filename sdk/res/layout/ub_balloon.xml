@@ -47,4 +47,4 @@
         android:textSize="12sp"
         android:visibility="gone" />
 
-</LinearLayout><!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/layout/ub_balloon.xml -->
+</LinearLayout>

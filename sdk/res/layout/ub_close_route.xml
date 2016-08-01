@@ -54,4 +54,4 @@
             android:src="@drawable/ub_button_close_box" />
     </LinearLayout>
 
-</LinearLayout><!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/layout/ub_close_route.xml -->
+</LinearLayout>

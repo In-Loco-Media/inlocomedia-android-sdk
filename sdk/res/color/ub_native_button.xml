@@ -5,4 +5,4 @@
     <item android:state_pressed="true" android:color="@color/ub_native_button_pressed"/>
     <item android:color="@color/ub_native_button_normal"/>
 
-</selector><!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/color/ub_native_button.xml -->
+</selector>

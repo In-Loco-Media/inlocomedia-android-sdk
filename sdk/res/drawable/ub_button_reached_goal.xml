@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/ub_button_reached_goal_pressed" android:state_pressed="true"></item>
     <item android:drawable="@drawable/ub_button_reached_goal_normal"></item>
 
-</selector><!-- From: file:/Users/gabriel/workspace/android/inlocomedia-android-sdk-private/inloco-android-sdk/res/drawable/ub_button_reached_goal.xml -->
+</selector>

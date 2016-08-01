@@ -1,3 +1,7 @@
+v1.11.6
+===
+- Hotfix: Removing Device Applications
+
 v1.11.5
 ===
 - Feature: Age range included on UserProfile
