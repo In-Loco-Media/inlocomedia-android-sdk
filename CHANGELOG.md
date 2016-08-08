@@ -1,3 +1,9 @@
+Release 2.2.5 (08/08/2016)
+===
+
+### Fixed:
+- Error that was making the location unavailable when uploading the collected data
+
 Release 2.2.4 (01/08/2016)
 ===
 
