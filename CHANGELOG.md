@@ -1,3 +1,8 @@
+Release 2.2.6 (17/08/2016)
+===
+### Fixed:
+- Logs for Install Tracker weren't available
+
 Release 2.2.5 (08/08/2016)
 ===
 
