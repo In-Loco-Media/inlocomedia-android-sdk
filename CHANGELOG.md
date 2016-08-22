@@ -1,3 +1,8 @@
+Release 2.2.7 (22/08/2016)
+===
+### Fixed:
+- Dependency problem with RecyclerView when Android Support-v7 is not available
+
 Release 2.2.6 (17/08/2016)
 ===
 ### Fixed:
