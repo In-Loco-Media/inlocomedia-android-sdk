@@ -44,6 +44,7 @@
     <string name="ilm_store_image_notification_title">Picture saved</string>
     <string name="ilm_store_image_toast_downloading">Saving…</string>
     <string name="ilm_store_image_toast_failure">The picture could not be saved.</string>
+    <string name="ilm_store_image_toast_not_granted_permission">You don\'t have permission to save photos.</string>
     <string name="ilm_store_image_toast_successful">The picture has been saved on your Gallery.</string>
     <string name="ilm_text_button">Install</string>
     <string name="ilm_title">Lorem ipsum dollor</string>

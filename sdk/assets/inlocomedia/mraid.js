@@ -1,4 +1,4 @@
-// V 0.1
+// V 0.2
 
 (function() {
     var isIOS = (/iphone|ipad|ipod/i).test(window.navigator.userAgent.toLowerCase());
@@ -147,7 +147,7 @@
         broadcastEvent(EVENTS.VIEWABLE_CHANGE, isViewable);
     };
 
-    bridge.setSupports = function(sms, tel, calendar, storePicture, inlineVideo) {
+    bridge.setSupportsAll = function(sms, tel, calendar, storePicture, inlineVideo) {
         supportProperties = {
             sms: sms,
             tel: tel,

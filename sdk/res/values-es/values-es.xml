@@ -10,5 +10,6 @@
     <string name="ilm_store_image_notification_title">Imagen guardada</string>
     <string name="ilm_store_image_toast_downloading">Guardando…</string>
     <string name="ilm_store_image_toast_failure">La imagen no pudo ser salvado.</string>
+    <string name="ilm_store_image_toast_not_granted_permission">Usted no tiene permiso para guardar fotos.</string>
     <string name="ilm_store_image_toast_successful">Imagen guardada en la Galería.</string>
 </resources>

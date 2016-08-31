@@ -1,3 +1,15 @@
+Release 2.3.0-rc1 (31/08/2016)
+===
+### Feature:
+- Improved background location tracker
+- Marshmallow runtime permissions added to Mraid save picture option
+- AdReceiver and LocationReceiver added in order to modularize InLocoMediaReceiver
+- Mraid now supports screen rotation
+
+### Fixed:
+- InstallTrackerReceiver failure with wrong tracking URLs
+- MiniBrowser now opens urls with deeplinks
+
 Release 2.2.7 (22/08/2016)
 ===
 ### Fixed:
