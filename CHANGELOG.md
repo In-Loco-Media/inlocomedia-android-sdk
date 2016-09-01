@@ -1,3 +1,8 @@
+Release 2.3.0-rc3 (01/09/2016)
+===
+### Fixed:
+- Restablished Gingerbread support
+
 Release 2.3.0-rc2 (01/09/2016)
 ===
 ### Fixed:
