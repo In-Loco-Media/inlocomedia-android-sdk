@@ -1,3 +1,8 @@
+Release 2.3.0-rc2 (01/09/2016)
+===
+### Fixed:
+- Synchronization error in InLocoMediaService remote configuration
+
 Release 2.3.0-rc1 (31/08/2016)
 ===
 ### Feature:
