@@ -1,3 +1,8 @@
+Release 2.3.0-rc4 (03/09/2016)
+===
+### Fixed:
+- Missing advertising id on offline background data collected
+
 Release 2.3.0-rc3 (01/09/2016)
 ===
 ### Fixed:
