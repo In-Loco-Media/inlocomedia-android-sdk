@@ -1,3 +1,10 @@
+Release 2.3.1 (05/09/2016)
+===
+
+### Feature:
+- Add Android Nougat (7.0) support
+- Update Google Play Services dependencies to version 9.4.0
+
 Release 2.3.0-rc4 (03/09/2016)
 ===
 ### Fixed:
