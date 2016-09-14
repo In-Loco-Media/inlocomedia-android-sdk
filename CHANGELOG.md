@@ -1,3 +1,10 @@
+Release 2.3.2 (14/09/2016)
+===
+
+### Fixed:
+- Missing GoogleApiAvailability line on consumer proguard
+- Older Android API incompatibility problems
+
 Release 2.3.1 (05/09/2016)
 ===
 
