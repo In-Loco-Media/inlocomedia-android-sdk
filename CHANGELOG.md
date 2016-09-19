@@ -1,3 +1,9 @@
+Release 2.3.3 (19/09/2016)
+===
+
+### Fixed:
+- Null Pointer Exception that could occur during InLocoMediaService start process
+
 Release 2.3.2 (14/09/2016)
 ===
 
