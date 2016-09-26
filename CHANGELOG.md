@@ -1,3 +1,9 @@
+Release 2.3.4 (26/09/2016)
+===
+
+### Hotfix:
+- Fix WebView deadlock in KitKat
+
 Release 2.3.3 (19/09/2016)
 ===
 
