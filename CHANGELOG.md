@@ -1,3 +1,9 @@
+Release 2.3.5 (29/09/2016)
+===
+
+### Feature:
+- Add recovery system to prevent the permanent death of the Location module
+
 Release 2.3.4 (26/09/2016)
 ===
 
