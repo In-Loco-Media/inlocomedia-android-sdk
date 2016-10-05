@@ -1,3 +1,9 @@
+Release 2.3.6 (05/10/2016)
+===
+
+### Fix:
+- Improved background location tracker, preventing redundancies
+
 Release 2.3.5 (29/09/2016)
 ===
 
