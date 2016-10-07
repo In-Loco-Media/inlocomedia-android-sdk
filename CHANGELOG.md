@@ -1,3 +1,9 @@
+Release 2.3.7 (07/10/2016)
+===
+
+### Fix:
+- Remove Google Play Services Location hard dependency
+
 Release 2.3.6 (05/10/2016)
 ===
 
