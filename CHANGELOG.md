@@ -1,3 +1,10 @@
+Release 2.3.8 (13/10/2016)
+===
+
+### Fix:
+- Geofencing Refresh through ad clicking
+- Notification Ad click is working again
+
 Release 2.3.7 (07/10/2016)
 ===
 
