@@ -1,3 +1,9 @@
+Release 2.3.9 (19/10/2016)
+===
+
+### Hotfix:
+- Timestamp, Hour and Timezone parameters were being kept constant during the app session
+
 Release 2.3.8 (13/10/2016)
 ===
 
