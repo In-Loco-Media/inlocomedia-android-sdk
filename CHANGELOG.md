@@ -1,3 +1,9 @@
+Release 2.3.10 (21/10/2016)
+===
+
+### Hotfix:
+- Fix WebView error in Android KitKat
+
 Release 2.3.9 (19/10/2016)
 ===
 
