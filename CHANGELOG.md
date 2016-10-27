@@ -1,3 +1,18 @@
+Release 2.4.0 (27/10/2016)
+===
+
+### Feature:
+- In Loco Media unique user id
+- Geofencing module improvements
+- Support Android API 25
+
+### Refactor:
+- Remove Eclipse support
+
+### Fixed:
+- SharedPreferencesManager saving properly when there was an old file
+- RecyclerView references without Support v7 library
+
 Release 2.3.10 (21/10/2016)
 ===
 
