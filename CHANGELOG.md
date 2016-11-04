@@ -1,3 +1,10 @@
+Release 2.4.1 (04/11/2016)
+===
+
+### Hotfix:
+- Remove Google Play Services Ads hard dependency
+- Fix InLocoMediaService finishing problem
+
 Release 2.4.0 (27/10/2016)
 ===
 
