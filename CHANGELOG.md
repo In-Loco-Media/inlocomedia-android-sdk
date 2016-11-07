@@ -1,3 +1,9 @@
+Release 2.4.2 (07/11/2016)
+===
+
+### Hotfix:
+- Fix file storage size limit bug
+
 Release 2.4.1 (04/11/2016)
 ===
 
