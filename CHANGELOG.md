@@ -1,3 +1,9 @@
+Release 2.4.3 (11/11/2016)
+===
+
+### Feature:
+- Add Background Location Tracking toggle
+
 Release 2.4.2 (07/11/2016)
 ===
 
