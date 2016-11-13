@@ -1,3 +1,9 @@
+Release 2.4.4 (13/11/2016)
+===
+
+### Hotfix:
+- Error caused when multiple interstitial were shown at the same time
+
 Release 2.4.3 (11/11/2016)
 ===
 
