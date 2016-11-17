@@ -1,3 +1,9 @@
+Release 2.4.5 (17/11/2016)
+===
+
+### Hotfix:
+- NativeAdListAdapter setOnScrollListener to access the ListView onScrollListener adapter that was being consumed by the Adapter
+
 Release 2.4.4 (13/11/2016)
 ===
 
