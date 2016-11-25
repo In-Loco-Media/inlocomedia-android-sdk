@@ -1,3 +1,9 @@
+Release 2.4.7 (28/11/2016)
+===
+
+### Hotfix:
+- Prevent SDK from crashing when loading accessibility javascript in older Android versions
+
 Release 2.4.6 (25/11/2016)
 ===
 
