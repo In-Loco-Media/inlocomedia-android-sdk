@@ -1,3 +1,11 @@
+Release 2.4.6 (25/11/2016)
+===
+
+### Hotfix:
+- SharedPreferencesManager is now thread-safe
+- Fix InLocoMediaWebView KitKat workaround by adding the second WebView to the same ViewGroup
+- NativeAdRecyclerAdapter setOnScrollListener to access the RecyclerView onScrollListener events that were being consumed by the Adapter
+
 Release 2.4.5 (17/11/2016)
 ===
 
