@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 dependencies {
 
     // Required
-    compile 'com.inlocomedia.android:android-sdk:2.4.+'
+    compile 'com.inlocomedia.android:android-sdk:2.5.+'
 
     // Required
     compile 'com.android.support:support-v4:25.0.0'

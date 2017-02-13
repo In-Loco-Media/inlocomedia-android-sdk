@@ -1,4 +1,2 @@
-include ':inlocomedia-maps-sample'
-project(":inlocomedia-maps-sample").projectDir = new File("samples/inlocomedia-maps-sample")
 include ':inlocomedia-ads-sample'
 project(":inlocomedia-ads-sample").projectDir = new File("samples/inlocomedia-ads-sample")

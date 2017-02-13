@@ -1,3 +1,13 @@
+Release 2.5.0 (13/02/2017)
+### Feature:
+- Location module improvements
+
+### Fix:
+- Location module null pointers and errors fixed
+
+### Refactor:
+- SDK completely modularized
+
 Release 2.4.7 (28/11/2016)
 ===
 
