@@ -1,4 +1,12 @@
+Release 2.5.1 (03/04/2017)
+===
+
+### Hotfix:
+- Fix SDK Error reporting while on background
+
 Release 2.5.0 (13/02/2017)
+===
+
 ### Feature:
 - Location module improvements
 
