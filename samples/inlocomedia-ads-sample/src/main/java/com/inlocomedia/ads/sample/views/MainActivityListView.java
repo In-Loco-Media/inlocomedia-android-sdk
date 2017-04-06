@@ -25,8 +25,8 @@ import com.inlocomedia.ads.sample.activities.ads.natives.NativeLargeListAdActivi
 import com.inlocomedia.ads.sample.activities.ads.natives.NativeSmallListAdActivity;
 import com.inlocomedia.ads.sample.activities.ads.notifications.NotificationActivity;
 import com.inlocomedia.ads.sample.views.util.ListItem;
-import com.inlocomedia.android.InLocoMedia;
 import com.inlocomedia.android.ads.AdType;
+import com.inlocomedia.android.ads.InLocoMedia;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -155,13 +155,13 @@ public class MainActivityListView extends ListView {
         getContext().startActivity(intent);
     }
 
-    static class MainActivityListAdapter extends BaseAdapter {
+    private static class MainActivityListAdapter extends BaseAdapter {
 
         private List<ListItem> mItems;
 
         private OnClickListener mNotificationClickListener;
 
-        public enum RowType {
+        enum RowType {
             NOTIFICATION, LIST_ITEM, HEADER_ITEM
         }
 
@@ -214,7 +214,7 @@ public class MainActivityListView extends ListView {
 
             if (mItems.get(position).getType() == ListItem.ItemType.NOTIFICATION) {
                 ToggleButton notificationToggleButton = ((ToggleButton) convertView.findViewById(R.id.notification_switch));
-                notificationToggleButton.setChecked(InLocoMedia.isNotificationAdEnabled(convertView.getContext()));
+                notificationToggleButton.setChecked(InLocoMedia.Notification.isEnabled(convertView.getContext()));
                 notificationToggleButton.setOnClickListener(mNotificationClickListener);
             }
 
@@ -224,7 +224,7 @@ public class MainActivityListView extends ListView {
             return convertView;
         }
 
-        public void setNotificationClickListener(OnClickListener onClickListener) {
+        void setNotificationClickListener(OnClickListener onClickListener) {
             mNotificationClickListener = onClickListener;
         }
     }

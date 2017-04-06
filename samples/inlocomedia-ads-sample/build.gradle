@@ -3,33 +3,33 @@ apply plugin: 'com.android.application'
 dependencies {
 
     // Required
-    compile 'com.inlocomedia.android:android-sdk:2.5.+'
+    compile 'com.inlocomedia.android:android-sdk:3.0.+'
 
     // Required
-    compile 'com.android.support:support-v4:25.0.0'
+    compile 'com.android.support:support-v4:25.3.1'
 
     // Required: Access GooglePlayServices advertising id
-    compile 'com.google.android.gms:play-services-ads:9.6.0'
+    compile 'com.google.android.gms:play-services-ads:10.2.1'
 
     // Required for Notification Ads, Optional for additional Ad targeting
-    compile 'com.google.android.gms:play-services-location:9.6.0'
+    compile 'com.google.android.gms:play-services-location:10.2.1'
 
     // AdFeed dependencies
     // Optional: Used for AdFeedRecyclerViewAdapter
-    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
 
     // Optional: Used for AdFeedRecyclerViewAdapter
-    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
 
 }
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         applicationId "com.inlocomedia.ads.sample"
-        minSdkVersion 9
+        minSdkVersion 14
         targetSdkVersion 25
     }
 

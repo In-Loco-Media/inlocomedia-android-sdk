@@ -6,8 +6,8 @@ import android.view.View;
 
 import com.inlocomedia.ads.sample.R;
 import com.inlocomedia.ads.sample.views.MainActivityListView;
-import com.inlocomedia.android.InLocoMedia;
-import com.inlocomedia.android.InLocoMediaOptions;
+import com.inlocomedia.android.ads.InLocoMedia;
+import com.inlocomedia.android.ads.InLocoMediaOptions;
 import com.inlocomedia.android.ads.notification.NotificationAdRequest;
 
 
@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
          */
         options.setAdsKey(getString(R.string.inlocomedia_ads_sample_key));
 
-        // Initializating the InLocoMedia SDK. Put this on your first activity
+        // Initializing the InLocoMedia SDK. Put this on your first activity
         InLocoMedia.init(this, options);
 
         // Sets the layout that contains the access to each Ad usage available for the SDK
@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
 
-                if (!InLocoMedia.isNotificationAdEnabled(MainActivity.this)) {
+                if (!InLocoMedia.Notification.isEnabled(MainActivity.this)) {
 
                     NotificationAdRequest request = new NotificationAdRequest();
 
@@ -56,9 +56,9 @@ public class MainActivity extends Activity {
                     request.setNotificationIconResourceId(R.drawable.ic_notification);
 
                     // Set the requests with the notification parameters
-                    InLocoMedia.setNotificationAdRequest(MainActivity.this, request);
+                    InLocoMedia.Notification.setAdRequest(MainActivity.this, request);
                 }
-                InLocoMedia.setNotificationAdEnabled(MainActivity.this, !InLocoMedia.isNotificationAdEnabled(MainActivity.this));
+                InLocoMedia.Notification.setEnabled(MainActivity.this, !InLocoMedia.Notification.isEnabled(MainActivity.this));
             }
         });
     }

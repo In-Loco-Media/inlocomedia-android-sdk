@@ -1,3 +1,22 @@
+Release 3.0.0 (06/04/2017)
+===
+
+### Feature:
+- InLocoMedia SDK now has two independent modules: Ads and Location, along with the full version
+- Improved Location Detection algorithm
+- VPaid ads
+
+### Fix:
+- Google Play Services hard dependency fixed
+- Check permissions and Google Play Services availability before interacting with Geofences
+- Calendar errors caused by different time zones
+
+### Refactor:
+- Android minimum API version increased to 14
+- Google Play Services version increased to 10.2.x
+- Several packages were refactored
+- Reduced SDK size print
+
 Release 2.5.1 (03/04/2017)
 ===
 

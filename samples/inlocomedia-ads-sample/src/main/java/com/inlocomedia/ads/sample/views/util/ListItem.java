@@ -19,8 +19,7 @@ public class ListItem implements Serializable {
         INTERSTITIAL,
         NATIVE,
         NATIVE_LIST,
-        NOTIFICATION,
-        FEED
+        NOTIFICATION
     }
 
     private String displayableString;
@@ -40,18 +39,6 @@ public class ListItem implements Serializable {
         return adType;
     }
 
-    public void setAdType(AdType type) {
-        this.adType = type;
-    }
-
-    public String getDisplayableString() {
-        return displayableString;
-    }
-
-    public void setDisplayableString(String displayableString) {
-        this.displayableString = displayableString;
-    }
-
     @Override
     public String toString() {
         return displayableString;
@@ -61,7 +48,7 @@ public class ListItem implements Serializable {
         return type;
     }
 
-    public void setType(ItemType type) {
+    private void setType(ItemType type) {
         this.type = type;
     }
 }
