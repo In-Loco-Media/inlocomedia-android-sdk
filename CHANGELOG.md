@@ -1,3 +1,9 @@
+Release 3.0.1 (13/04/2017)
+===
+
+### Hotfix:
+- Fixing wrong method call on WebView on devices using api 18 and below
+
 Release 3.0.0 (06/04/2017)
 ===
 
