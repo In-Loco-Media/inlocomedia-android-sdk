@@ -1,3 +1,9 @@
+Release 3.0.2 (19/04/2017)
+===
+
+### Hotfix:
+- Fixing wrong method call on Location Module on devices using api 18 and below
+
 Release 3.0.1 (13/04/2017)
 ===
 
