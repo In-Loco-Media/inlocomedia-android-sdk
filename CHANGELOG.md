@@ -1,3 +1,11 @@
+Release 3.0.3 (20/04/2017)
+===
+
+### Hotfix:
+- Fix javascript errors on Androids below API 15
+- Fix location tracking issues with navigation
+- Fix request spike on fixed hours
+
 Release 3.0.2 (19/04/2017)
 ===
 
