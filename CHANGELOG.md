@@ -1,3 +1,9 @@
+Release 3.0.4 (24/04/2017)
+===
+
+### Hotfix:
+- Fixing alarm error introduced on 3.0.3
+
 Release 3.0.3 (20/04/2017)
 ===
 
