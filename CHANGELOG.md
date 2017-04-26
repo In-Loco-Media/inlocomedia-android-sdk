@@ -1,3 +1,9 @@
+Release 3.0.5 (26/04/2017)
+===
+
+### Hotfix:
+- Fixed WebView onDestroy call when Accessibility is enabled
+
 Release 3.0.4 (24/04/2017)
 ===
 
