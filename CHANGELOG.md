@@ -1,3 +1,9 @@
+Release 3.0.6 (27/04/2017)
+===
+
+### Refactor:
+- Enabling AdWebView to receive external WebViewClient
+
 Release 3.0.5 (26/04/2017)
 ===
 
