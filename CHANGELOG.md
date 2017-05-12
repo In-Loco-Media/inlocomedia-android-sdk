@@ -1,3 +1,9 @@
+Release 3.0.7 (12/05/2017)
+===
+
+### Hotfix
+- Reducing the frequency of updates for the SDK's remote configuration
+
 Release 3.0.6 (27/04/2017)
 ===
 
