@@ -1,3 +1,9 @@
+Release 3.0.8 (15/06/2017)
+===
+
+### Hotfix
+- Missing the RECEIVE_BOOT_COMPLETED permission no longer disables Notification
+
 Release 3.0.7 (12/05/2017)
 ===
 

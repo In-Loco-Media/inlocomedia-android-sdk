@@ -100,7 +100,7 @@
         </activity>
 
         <receiver
-            android:name="com.inlocomedia.android.InLocoMediaReceiver"
+            android:name="com.inlocomedia.android.location.LocationReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
