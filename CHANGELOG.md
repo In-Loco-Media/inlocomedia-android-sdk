@@ -1,3 +1,9 @@
+Release 3.0.9 (20/06/2017)
+===
+
+### Hotfix:
+- Enabling AdWebView to receive external load javascript calls
+
 Release 3.0.8 (15/06/2017)
 ===
 
