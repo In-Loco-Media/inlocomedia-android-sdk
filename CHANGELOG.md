@@ -1,3 +1,9 @@
+Release 3.0.10 (23/06/2017)
+===
+
+### Hotfix:
+- Geofencing service error when the location service did not supply the latitude and longitude
+
 Release 3.0.9 (20/06/2017)
 ===
 
