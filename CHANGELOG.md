@@ -1,3 +1,21 @@
+Release 3.1.0 (06/07/2017)
+===
+
+### Feature:
+- Video ads are now supported
+- In Loco Engagement SDK released
+- Native Ads now support external views
+- Enables dom storage for web view
+- Improved Location module
+
+### Fix:
+- NullpointerExceptions fixed
+- Stop throwing geofencing storage exception
+
+### Refactor:
+- Removes Custom Ad and Native Offer
+- Removes Maps modules
+
 Release 3.0.10 (23/06/2017)
 ===
 
