@@ -1,3 +1,11 @@
+Release 3.1.1 (11/07/2017)
+===
+
+### Fix:
+- Fix back button error on video ads
+- Database insertion failures handled properly
+- Location module concurrency problem
+
 Release 3.1.0 (06/07/2017)
 ===
 
