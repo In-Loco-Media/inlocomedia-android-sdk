@@ -1,3 +1,10 @@
+Release 3.1.2 (12/07/2017)
+===
+
+### Fix:
+- Location module concurrency problems
+- Remove mandatory push provider token from register device request on Engage SDK
+
 Release 3.1.1 (11/07/2017)
 ===
 
