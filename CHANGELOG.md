@@ -1,3 +1,10 @@
+Release 3.1.3 (18/07/2017)
+===
+
+### Hotfix:
+- Fix location tracking startup issue
+- Fix concurrent modification exception in Location module
+
 Release 3.1.2 (12/07/2017)
 ===
 
