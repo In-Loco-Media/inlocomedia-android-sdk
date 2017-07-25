@@ -1,3 +1,13 @@
+Release 3.1.4 (25/07/2017)
+===
+
+### Refactor:
+- Refactors Location Service lifecycle
+
+### Fix:
+- Several null pointer errors in the Location module
+- Files will only be downloaded once in video ads
+
 Release 3.1.3 (18/07/2017)
 ===
 
