@@ -1,3 +1,13 @@
+Release 3.1.5 (02/08/2017)
+===
+
+### Refactor:
+- Global cache for files
+
+### Hotfix:
+- Fixes internal storage trim logic
+- Validates video banner
+
 Release 3.1.4 (25/07/2017)
 ===
 
