@@ -1,3 +1,18 @@
+Release 3.2.0 (09/08/2017)
+===
+
+### Feature:
+- Ad click destination is shown in an internal mini browser by default
+- Protobuf as an optional dependency
+
+### Fix
+- Notification ads working again
+- Prevent apps targeting android O from crashing
+- Increase WebView timeout for video ads
+
+### Refactor
+- GCMToken removed from Engage
+
 Release 3.1.5 (02/08/2017)
 ===
 
