@@ -1,3 +1,9 @@
+Release 3.2.1 (11/08/2017)
+===
+
+### Hotfix:
+- Location module exceptions fixed
+
 Release 3.2.0 (09/08/2017)
 ===
 
