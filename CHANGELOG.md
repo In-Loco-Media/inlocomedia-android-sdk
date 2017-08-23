@@ -1,3 +1,16 @@
+Release 3.2.2 (23/08/2017)
+===
+
+### Feature:
+- Created a WebhookDeviceRequestRequest object to make it easier to register a webhook
+
+### Hotfix:
+- Notification Ads working on apps that target Android Oreo when run on devices that are not running Oreo
+- Use external browser as default method to show urls
+- Music stream is now unmuted after video
+- User Id wasn't being attributed when registering an Endpoint on Engage SDK
+- Check deep links before using the mini browser
+
 Release 3.2.1 (11/08/2017)
 ===
 
