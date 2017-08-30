@@ -1,3 +1,9 @@
+Release 3.2.3 (30/08/2017)
+===
+
+### Hotfix:
+- Fixed error that made ACCESS_WIFI_STATE permission obligatory. It's now optional again
+
 Release 3.2.2 (23/08/2017)
 ===
 
