@@ -1,3 +1,9 @@
+Release 3.2.4 (01/09/2017)
+===
+
+### Hotfix:
+- Fixed null pointer exception in InLocoMediaActivity
+
 Release 3.2.3 (30/08/2017)
 ===
 
