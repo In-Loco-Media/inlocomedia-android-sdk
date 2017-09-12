@@ -1,3 +1,9 @@
+Release 3.2.5 (12/09/2017)
+===
+
+### Hotfix:
+- Fixed a viewability error for video ads
+
 Release 3.2.4 (01/09/2017)
 ===
 
