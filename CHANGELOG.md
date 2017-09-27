@@ -1,3 +1,22 @@
+Release 3.3.0 (27/09/2017)
+===
+
+### Features:
+- New InLoco Experience and Engage Experience apps
+- Rewarded Video Ads
+- Portrait Videos
+- Optimizations to Location Module and location tracking algorithm
+
+### Fix:
+- Video orientation change no longer causes a null pointer
+- Prevents redundant data from being sent to Analytics server
+
+### Refactor:
+- Refactored modules' architecture
+- Refactored modules' initialization
+- Refactored Location Tracking
+- Removed Protobuf dependency completely
+
 Release 3.2.5 (12/09/2017)
 ===
 
