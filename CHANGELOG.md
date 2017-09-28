@@ -1,3 +1,8 @@
+Release 3.3.1 (28/09/2017)
+===
+### Hotfix:
+- Engage User Id not being sent on request
+
 Release 3.3.0 (27/09/2017)
 ===
 
