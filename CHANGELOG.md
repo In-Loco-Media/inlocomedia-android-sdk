@@ -1,3 +1,10 @@
+Release 3.3.2 (05/10/2017)
+===
+
+### Hotfix:
+- Fixing null pointer exception when the device did not have sim cards
+- Reducing the max size for each request the sdk can make
+
 Release 3.3.1 (28/09/2017)
 ===
 ### Hotfix:
