@@ -1,3 +1,13 @@
+Release 3.3.3 (10/10/2017)
+===
+
+### Hotfix:
+- Fixed SecurityException thrown on older devices because of permissions missing
+- Fixed page view event registration
+
+### Features
+- Improved mini browser layout
+
 Release 3.3.2 (05/10/2017)
 ===
 
