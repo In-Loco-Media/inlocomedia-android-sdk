@@ -9,11 +9,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:text="@string/interstitial_ad_screen_text"
+        android:text="@string/fullscreen_ad_screen_text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/request_interstitial_button"
+        android:id="@+id/request_fullscreen_ad_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/description_text"

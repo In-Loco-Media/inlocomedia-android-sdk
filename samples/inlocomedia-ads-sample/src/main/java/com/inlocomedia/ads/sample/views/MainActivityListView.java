@@ -24,6 +24,7 @@ import com.inlocomedia.ads.sample.activities.ads.natives.NativeAdActivity;
 import com.inlocomedia.ads.sample.activities.ads.natives.NativeLargeListAdActivity;
 import com.inlocomedia.ads.sample.activities.ads.natives.NativeSmallListAdActivity;
 import com.inlocomedia.ads.sample.activities.ads.notifications.NotificationActivity;
+import com.inlocomedia.ads.sample.activities.ads.rewarded.RewardedAdActivity;
 import com.inlocomedia.ads.sample.views.util.ListItem;
 import com.inlocomedia.android.ads.AdType;
 import com.inlocomedia.android.ads.InLocoMedia;
@@ -57,6 +58,8 @@ public class MainActivityListView extends ListView {
 
     private ListItem[] interstitialItems = {new ListItem("Interstitial", ListItem.ItemType.INTERSTITIAL)};
 
+    private ListItem[] rewardedItems = {new ListItem("Rewarded", ListItem.ItemType.REWARDED)};
+
     private ListItem[] nativeItems = {new ListItem("Native Small", AdType.NATIVE_SMALL, ListItem.ItemType.NATIVE),
                                       new ListItem("Native Large", AdType.NATIVE_LARGE, ListItem.ItemType.NATIVE),
                                       new ListItem("Native Small - List", AdType.NATIVE_SMALL, ListItem.ItemType.NATIVE_LIST),
@@ -66,6 +69,7 @@ public class MainActivityListView extends ListView {
 
     private ListItem displayHeader = new ListItem("Display Ads", ListItem.ItemType.HEADER);
     private ListItem interstitialHeader = new ListItem("Interstitial Ads", ListItem.ItemType.HEADER);
+    private ListItem rewardedHeader = new ListItem("Rewarded Ads", ListItem.ItemType.HEADER);
     private ListItem nativeHeader = new ListItem("Native Ads", ListItem.ItemType.HEADER);
     private ListItem notificationHeader = new ListItem("Notification", ListItem.ItemType.HEADER);
 
@@ -103,6 +107,9 @@ public class MainActivityListView extends ListView {
         mListItems.add(interstitialHeader);
         Collections.addAll(mListItems, interstitialItems);
 
+        mListItems.add(rewardedHeader);
+        Collections.addAll(mListItems, rewardedItems);
+
         mListItems.add(nativeHeader);
         Collections.addAll(mListItems, nativeItems);
 
@@ -132,6 +139,9 @@ public class MainActivityListView extends ListView {
 
                 } else if (item.getType() == ListItem.ItemType.NATIVE) {
                     startActivityWithItem(NativeAdActivity.class, item);
+
+                } else if (item.getType() == ListItem.ItemType.REWARDED) {
+                    startActivity(RewardedAdActivity.class);
                 }
             }
         });

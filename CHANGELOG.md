@@ -1,3 +1,9 @@
+Release 3.3.4 (13/10/2017)
+===
+
+### Hotfix:
+- Removing Engage dependency with GCM when using Webhook
+
 Release 3.3.3 (10/10/2017)
 ===
 

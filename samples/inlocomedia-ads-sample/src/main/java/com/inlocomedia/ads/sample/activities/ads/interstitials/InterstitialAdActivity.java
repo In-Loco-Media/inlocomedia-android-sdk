@@ -21,11 +21,11 @@ public class InterstitialAdActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        this.setContentView(R.layout.interstitial_ad_activity_layout);
+        this.setContentView(R.layout.fullscreen_ad_activity_layout);
 
         mDescriptionText = (TextView) findViewById(R.id.description_text);
 
-        View view = findViewById(R.id.request_interstitial_button);
+        View view = findViewById(R.id.request_fullscreen_ad_button);
         view.setOnClickListener(new OnClickListener() {
 
             @SuppressLint("SetTextI18n")

@@ -6,6 +6,7 @@
     <string name="native_ad_unit">a82300094e4dfb1a80ab8368316661e1b9329be8c181b5e6dade7f95807f8928</string>
     <string name="display_ad_unit">7b0a95d16779ef086faa63eafe4418a78eb1be0ef86d5f717663490deebea482</string>
     <string name="interstitial_ad_unit">4c28225a6b11d4d8ecf0cf058efcffe47a15b3dabdfff6acbcf3381244318ff4</string>
+    <string name="rewarded_ad_unit">903a7ab9fa58d4573f4211d6c2c8ec4ce90683bae4ecf2f3b4c81c30633a9a16</string>
 
     <bool name="inlocomedia_ads_sample_logs_enabled">true</bool>
 
