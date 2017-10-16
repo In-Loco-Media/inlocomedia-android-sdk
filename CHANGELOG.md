@@ -1,3 +1,9 @@
+Release 3.3.5 (16/10/2017)
+===
+
+### Hotfix:
+- Fix mini browser layout issues on some devices
+
 Release 3.3.4 (13/10/2017)
 ===
 
