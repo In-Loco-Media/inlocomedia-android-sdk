@@ -1,3 +1,9 @@
+Release 3.3.6 (17/10/2017)
+===
+
+### Hotfix:
+- Fix remote configuration errors
+
 Release 3.3.5 (16/10/2017)
 ===
 
