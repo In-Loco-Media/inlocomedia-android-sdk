@@ -1,3 +1,9 @@
+Release 3.3.7 (18/10/2017)
+===
+
+### Refactor:
+- Optimizes the video viewability detection
+
 Release 3.3.6 (17/10/2017)
 ===
 
