@@ -1,3 +1,9 @@
+Release 3.3.8 (19/10/2017)
+===
+
+### Hotfix:
+- Fixed null pointer exceptions that happened when there was no listener associated with an Advertisement request
+
 Release 3.3.7 (18/10/2017)
 ===
 
