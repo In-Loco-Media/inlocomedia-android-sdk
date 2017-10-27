@@ -1,3 +1,9 @@
+Release 3.3.9 (27/10/2017)
+===
+
+### Hotfix:
+- Prevents a crash in older webviews when the locale is changed
+
 Release 3.3.8 (19/10/2017)
 ===
 
