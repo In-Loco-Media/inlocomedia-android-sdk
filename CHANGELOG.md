@@ -1,3 +1,12 @@
+Release 3.3.10 (01/11/2017)
+===
+
+### Feature:
+- Adds support to optional airplane mode broadcast
+
+### Hotfix:
+- Fixes Location module behaviour when the phone is rebooted
+
 Release 3.3.9 (27/10/2017)
 ===
 
