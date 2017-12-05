@@ -1,3 +1,19 @@
+Release 3.4.0 (05/12/2017)
+===
+
+### Features:
+- Mini Browser improvements
+- Optimizations to Location Module and location tracking algorithm
+- Video streaming
+
+### Fix:
+- Null pointer on base64 encoding
+- Location system null pointer errors protected
+- Check if the Notification icon is a valid drawable
+- Check for permission before reading mobile network info
+- Protect mini browser onCreate method
+- Check if any app can handle the url before loading on mini browser
+
 Release 3.3.10 (01/11/2017)
 ===
 
