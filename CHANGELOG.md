@@ -1,3 +1,9 @@
+Release 3.4.1 (24/01/2018)
+===
+
+### Features:
+- Engage opt-in/out
+
 Release 3.4.0 (05/12/2017)
 ===
 
