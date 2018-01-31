@@ -1,3 +1,9 @@
+Release 3.4.2 (30/01/2018)
+===
+
+### Hotfix:
+- Fixes Engage public interface
+
 Release 3.4.1 (24/01/2018)
 ===
 
