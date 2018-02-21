@@ -1,3 +1,10 @@
+Release 3.4.3 (21/02/2018)
+===
+
+### Hotfix:
+- Fixes minor null pointer on location module
+- Fix NativeAdRecyclerAdapter behaviour when removing items
+
 Release 3.4.2 (30/01/2018)
 ===
 
