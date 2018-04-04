@@ -1,3 +1,20 @@
+Release 3.5.0 (04/04/2018)
+===
+
+### Features:
+- Bluetooth LE scan support
+- Improvements on the SDK thread framework
+- Several improvements on the location algorithm
+- ActivityRecognition support
+- Improvements on connectivity detection
+
+### Fix:
+- Fixed disable notifications logic
+- Removed HTML pre-load from Notification Ads
+- Prevents crashes if Ad Unit Config is invalid
+- Fixed thread blocking on GooglePlayServices clients
+- Download Image file provider
+
 Release 3.4.3 (21/02/2018)
 ===
 
