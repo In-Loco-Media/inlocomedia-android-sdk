@@ -1,3 +1,9 @@
+Release 3.5.1 (06/04/2018)
+===
+
+### Hotfix:
+- Fixes bug in location algorithm
+
 Release 3.5.0 (04/04/2018)
 ===
 
