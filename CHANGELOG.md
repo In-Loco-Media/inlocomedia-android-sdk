@@ -1,3 +1,9 @@
+Release 3.5.2 (09/04/2018)
+===
+
+### Hotfix:
+- Fixes minor database error
+
 Release 3.5.1 (06/04/2018)
 ===
 
