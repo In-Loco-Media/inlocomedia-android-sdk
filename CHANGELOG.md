@@ -1,3 +1,10 @@
+Release 3.5.3 (10/04/2018)
+===
+
+### Hotfix:
+- Fixes a critical failure when the service is disabled
+- Fixes incorrect behaviour after leaving a place to reduce battery consumption
+
 Release 3.5.2 (09/04/2018)
 ===
 
