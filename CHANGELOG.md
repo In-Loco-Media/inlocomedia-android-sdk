@@ -1,3 +1,9 @@
+Release 3.5.4 (11/04/2018)
+===
+
+### Hotfix:
+- Fixes error when calling API methods right after init in the main thread
+
 Release 3.5.3 (10/04/2018)
 ===
 
