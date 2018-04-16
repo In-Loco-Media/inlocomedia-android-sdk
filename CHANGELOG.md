@@ -1,3 +1,9 @@
+Release 3.5.5 (16/04/2018)
+===
+
+### Hotfix:
+- Fixes minor null pointer on location module
+
 Release 3.5.4 (11/04/2018)
 ===
 
