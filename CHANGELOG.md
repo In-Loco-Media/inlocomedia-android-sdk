@@ -1,3 +1,9 @@
+Release 3.5.6 (17/04/2018)
+===
+
+### Hotfix:
+- Fixes an alarm scheduling error
+
 Release 3.5.5 (16/04/2018)
 ===
 
