@@ -1,3 +1,9 @@
+Release 3.5.7 (30/04/2018)
+===
+
+### Hotfix:
+- Fixes error on visits detection algorithm
+
 Release 3.5.6 (17/04/2018)
 ===
 
