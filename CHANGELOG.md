@@ -1,3 +1,9 @@
+Release 3.5.8 (09/05/2018)
+===
+
+### Hotfix:
+- Prevents Google Play Services crash from happening on Nexus 5X devices
+
 Release 3.5.7 (30/04/2018)
 ===
 
