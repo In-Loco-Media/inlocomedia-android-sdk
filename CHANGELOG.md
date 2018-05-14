@@ -1,3 +1,9 @@
+Release 3.5.9 (14/05/2018)
+===
+
+### Hotfix:
+- Fixes a minor error on the location module
+
 Release 3.5.8 (09/05/2018)
 ===
 
