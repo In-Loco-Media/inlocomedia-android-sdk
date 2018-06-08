@@ -1,3 +1,9 @@
+Release 3.5.10 (08/06/2018)
+===
+
+### Hotfix:
+- Fixes bug that prevented InLocoEngagementOptions from being persisted
+
 Release 3.5.9 (14/05/2018)
 ===
 
