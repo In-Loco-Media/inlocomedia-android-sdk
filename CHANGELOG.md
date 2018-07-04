@@ -1,3 +1,9 @@
+Release 3.5.11 (04/07/2018)
+===
+
+### Hotfix:
+- Fixes bug that prevented buttons from working on video ads
+
 Release 3.5.10 (08/06/2018)
 ===
 
