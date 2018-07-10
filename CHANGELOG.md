@@ -1,3 +1,13 @@
+Release 4.0.0 (10/07/2018)
+===
+
+### Features:
+- GDPR Support
+- Notification channels support
+- Adds several improvements on the location algorithm
+- Adds app usage events
+- Changes the Engage public API
+
 Release 3.5.11 (04/07/2018)
 ===
 
