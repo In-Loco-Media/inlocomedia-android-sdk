@@ -1,3 +1,9 @@
+Release 4.0.1 (11/07/2018)
+===
+
+### Hotfix:
+- Makes EngageUser class available
+
 Release 4.0.0 (10/07/2018)
 ===
 
