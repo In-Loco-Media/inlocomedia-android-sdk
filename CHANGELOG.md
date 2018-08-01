@@ -1,3 +1,9 @@
+Release 4.0.2 (01/08/2018)
+===
+
+### Hotfix:
+- Fixes bug that prevented remote configuration on older Android versions
+
 Release 4.0.1 (11/07/2018)
 ===
 
