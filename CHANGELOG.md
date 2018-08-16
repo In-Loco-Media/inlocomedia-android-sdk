@@ -1,3 +1,9 @@
+Release 3.5.12 (16/08/2018)
+===
+
+### Hotfix:
+- Decreases daily number of requests
+
 Release 3.5.11 (04/07/2018)
 ===
 
