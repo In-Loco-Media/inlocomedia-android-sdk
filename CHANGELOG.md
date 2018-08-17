@@ -1,3 +1,9 @@
+Release 4.0.3 (17/08/2018)
+===
+
+### Hotfix:
+- Decreases daily number of requests
+
 Release 4.0.2 (01/08/2018)
 ===
 
@@ -19,6 +25,12 @@ Release 4.0.0 (10/07/2018)
 - Adds several improvements on the location algorithm
 - Adds app usage events
 - Changes the Engage public API
+
+Release 3.5.12 (16/08/2018)
+===
+
+### Hotfix:
+- Decreases daily number of requests
 
 Release 3.5.11 (04/07/2018)
 ===
