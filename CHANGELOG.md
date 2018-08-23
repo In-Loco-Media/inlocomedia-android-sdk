@@ -1,3 +1,9 @@
+Release 3.5.13 (23/08/2018)
+===
+
+### Hotfix:
+- Prevents unnecessary registration requests on Engage
+
 Release 3.5.12 (16/08/2018)
 ===
 
