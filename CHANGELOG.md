@@ -1,3 +1,14 @@
+Release 4.1.0 (24/08/2018)
+===
+
+### Features:
+- Android Oreo complete support
+- Adds several improvements on the location algorithm
+
+
+### Fixes:
+- Several Location SDK bug fixes
+
 Release 4.0.3 (17/08/2018)
 ===
 
@@ -25,6 +36,12 @@ Release 4.0.0 (10/07/2018)
 - Adds several improvements on the location algorithm
 - Adds app usage events
 - Changes the Engage public API
+
+Release 3.5.13 (23/08/2018)
+===
+
+### Hotfix:
+- Prevents unnecessary registration requests on Engage
 
 Release 3.5.12 (16/08/2018)
 ===
