@@ -1,3 +1,9 @@
+Release 4.1.1 (27/08/2018)
+===
+
+### Hotfix:
+- Prevents crash on Lollipop Samsung devices
+
 Release 4.1.0 (24/08/2018)
 ===
 
