@@ -1,3 +1,9 @@
+Release 4.1.2 (30/08/2018)
+===
+
+### Hotfix:
+- Prevents crashes during SDK initialization
+
 Release 4.1.1 (27/08/2018)
 ===
 
