@@ -1,3 +1,9 @@
+Release 4.1.3 (13/09/2018)
+==========================
+
+### Hotfix:
+- Prevents service crash on Oreo devices or later
+
 Release 4.1.2 (30/08/2018)
 ===
 
