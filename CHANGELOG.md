@@ -1,3 +1,9 @@
+Release 4.1.4 (21/09/2018)
+=========================
+
+### Hotfix:
+- Prevents InLocoMediaService crash
+
 Release 4.1.3 (13/09/2018)
 ==========================
 
