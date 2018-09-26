@@ -1,3 +1,9 @@
+Release 4.1.5 (26/09/2018)
+=========================
+
+### Hotfix:
+- Adds option to enable/disable the Foreground Service
+
 Release 4.1.4 (21/09/2018)
 =========================
 
