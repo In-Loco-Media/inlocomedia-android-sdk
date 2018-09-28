@@ -1,3 +1,11 @@
+Release 4.2.0 (28/09/2018)
+==========================
+
+### Feature:
+- Engage periodic recovery registration
+- Engage icon fallback in case of image download failure
+- Adds user address to engage user registration
+
 Release 4.1.5 (26/09/2018)
 =========================
 
