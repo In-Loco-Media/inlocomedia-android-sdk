@@ -1,3 +1,9 @@
+Release 4.2.1 (01/10/2018)
+==========================
+
+### Hotfix:
+- Prevents multiple calls to the `SQLiteDatabase.openDatabase()` method
+
 Release 4.2.0 (28/09/2018)
 ==========================
 
