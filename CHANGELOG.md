@@ -1,3 +1,9 @@
+Release 4.2.2 (15/10/2018)
+==========================
+
+### Hotfix:
+- Fixes Visits detection latency issues
+
 Release 4.2.1 (01/10/2018)
 ==========================
 
