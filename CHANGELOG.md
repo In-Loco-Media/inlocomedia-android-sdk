@@ -1,3 +1,9 @@
+Release 4.2.3 (19/10/2018)
+==========================
+
+### Hotfix:
+- Prevents memory errors when creating a new thread
+
 Release 4.2.2 (15/10/2018)
 ==========================
 
