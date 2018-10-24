@@ -1,3 +1,9 @@
+Release 3.5.14 (24/10/2018)
+===========================
+
+### Hotfix:
+- Fixes data collection, validating each sensor request to prevent system errors on older Android versions
+
 Release 3.5.13 (23/08/2018)
 ===
 
