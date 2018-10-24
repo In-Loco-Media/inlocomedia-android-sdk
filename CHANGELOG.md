@@ -1,3 +1,9 @@
+Release 4.2.4 (24/10/2018)
+==========================
+
+### Hotfix:
+- Fixes data collection, validating each sensor request to prevent system errors on older Android versions
+
 Release 4.2.3 (19/10/2018)
 ==========================
 
@@ -92,6 +98,12 @@ Release 4.0.0 (10/07/2018)
 - Adds several improvements on the location algorithm
 - Adds app usage events
 - Changes the Engage public API
+
+Release 3.5.14 (24/10/2018)
+===========================
+
+### Hotfix:
+- Fixes data collection, validating each sensor request to prevent system errors on older Android versions
 
 Release 3.5.13 (23/08/2018)
 ===
