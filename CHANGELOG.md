@@ -1,3 +1,14 @@
+Release 4.3.0 (29/10/2018)
+==========================
+
+### Features:
+- Adds Android Pie support
+- Address enrichment with forward-geocoding
+
+### Fixes:
+- Checks if bluetooth is enabled before trying to interact with the Bluetooth adapter
+- Fixes databases being accessed by different threads
+
 Release 4.2.4 (24/10/2018)
 ==========================
 
