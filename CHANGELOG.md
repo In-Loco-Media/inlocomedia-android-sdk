@@ -1,3 +1,9 @@
+Release 4.3.2 (31/10/2018)
+==========================
+
+### Hotfix:
+- Fixes incorrect location requesting behaviour to reduce battery consumption
+
 Release 4.3.1 (30/10/2018)
 ==========================
 
@@ -14,6 +20,12 @@ Release 4.3.0 (29/10/2018)
 ### Fixes:
 - Checks if bluetooth is enabled before trying to interact with the Bluetooth adapter
 - Fixes databases being accessed by different threads
+
+Release 4.2.5 (31/10/2018)
+==========================
+
+### Hotfix:
+- Fixes incorrect location requesting behaviour to reduce battery consumption
 
 Release 4.2.4 (24/10/2018)
 ==========================
@@ -46,6 +58,12 @@ Release 4.2.0 (28/09/2018)
 - Engage periodic recovery registration
 - Engage icon fallback in case of image download failure
 - Adds user address to engage user registration
+
+Release 4.1.6 (31/10/2018)
+==========================
+
+### Hotfix:
+- Fixes incorrect location requesting behaviour to reduce battery consumption
 
 Release 4.1.5 (26/09/2018)
 =========================
