@@ -1,3 +1,9 @@
+Release 4.1.6 (31/10/2018)
+==========================
+
+### Hotfix:
+- Fixes incorrect location requesting behaviour to reduce battery consumption
+
 Release 4.1.5 (26/09/2018)
 =========================
 
