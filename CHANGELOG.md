@@ -1,3 +1,9 @@
+Release 4.2.6 (01/11/2018)
+==========================
+ 
+### Hotfix:
+- Fixes concurrency issue when setting the privacy consent
+
 Release 4.2.5 (31/10/2018)
 ==========================
 
