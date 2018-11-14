@@ -1,6 +1,12 @@
-Release 4.3.3 (01/11/2018)
+Release 4.3.4 (14/11/2018)
 ==========================
 
+### Hotfix:
+- Fixes null context on public interface methods
+
+Release 4.3.3 (01/11/2018)
+==========================
+ 
 ### Hotfix:
 - Fixes concurrency problem when setting the privacy consent
 
