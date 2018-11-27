@@ -1,3 +1,9 @@
+Release 4.3.5 (27/11/2018)
+==========================
+
+### Hotfix:
+- Fixes Google Play Services new classes not being present on consumer proguard files
+
 Release 4.3.4 (14/11/2018)
 ==========================
 
