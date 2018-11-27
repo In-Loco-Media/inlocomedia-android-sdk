@@ -1,3 +1,9 @@
+Release 4.2.7 (27/11/2018)
+==========================
+ 
+### Hotfix:
+- Fixes Google Play Services new classes not being present on consumer proguard files
+
 Release 4.2.6 (01/11/2018)
 ==========================
  
