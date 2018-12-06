@@ -1,3 +1,9 @@
+Release 4.3.7 (06/12/2018)
+==========================
+
+### Hotfix:
+- Fixes proguard rules to prevent UserProfile.Gender enum obfuscation
+
 Release 4.3.6 (29/11/2018)
 ==========================
 
