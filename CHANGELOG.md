@@ -1,3 +1,9 @@
+Release 4.3.8 (13/12/2018)
+==========================
+
+### Hotfix:
+- Fixes concurrency error and protects error logging
+
 Release 4.3.7 (06/12/2018)
 ==========================
 
