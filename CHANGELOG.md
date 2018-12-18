@@ -1,3 +1,9 @@
+Release 4.3.10 (18/12/2018)
+=========================
+
+### Hotfix:
+- Adds missing service options on InLocoMediaOptions
+
 Release 4.3.9 (17/12/2018)
 ==========================
 
