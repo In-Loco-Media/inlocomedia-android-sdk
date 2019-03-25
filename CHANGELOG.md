@@ -1,3 +1,9 @@
+Release 4.3.14 (25/03/2019)
+=========================
+
+### Hotfix:
+- Fixes Google Play Services access in the main thread when using automatic permission requests for notification ads
+
 Release 4.3.13 (01/03/2019)
 =========================
 
