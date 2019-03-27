@@ -1,3 +1,9 @@
+Release 4.3.15 (27/03/2019)
+=========================
+
+### Hotfix:
+- Allows notification ad icon to be set via manifest to prevent mismatched resource ids
+
 Release 4.3.14 (25/03/2019)
 =========================
 
