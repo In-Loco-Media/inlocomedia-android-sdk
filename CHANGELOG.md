@@ -1,3 +1,17 @@
+Release 4.4.0 (23/04/2019)
+==========================
+
+### Features:
+- Improves Ads push notifications with new capabilities
+
+### Refactor:
+- Updates Location lifecycle classes, reducing memory consumption
+- Reduces CPU usage and number of threads used
+- Reduces network usage
+
+### Fixes:
+- Fixes RemoteServiceException occurrences
+
 Release 4.3.16 (08/04/2019)
 =========================
 
