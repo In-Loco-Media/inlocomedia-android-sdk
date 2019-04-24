@@ -1,3 +1,9 @@
+Release 4.4.1 (24/04/2019)
+=========================
+
+### Hotfix:
+- Adds option to enable/disable SDK background wake ups
+
 Release 4.4.0 (23/04/2019)
 ==========================
 
