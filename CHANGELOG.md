@@ -1,3 +1,9 @@
+Release 4.4.2 (26/04/2019)
+=========================
+
+### Hotfix:
+- Internal tweaks to improve reliability 
+
 Release 4.4.1 (24/04/2019)
 =========================
 
