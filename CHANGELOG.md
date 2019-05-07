@@ -1,3 +1,9 @@
+Release 4.4.3 (07/05/2019)
+=========================
+
+### Hotfix:
+- Fixes a bug preventing remote configuration of Ads and Engage SDKs
+
 Release 4.4.2 (26/04/2019)
 =========================
 
