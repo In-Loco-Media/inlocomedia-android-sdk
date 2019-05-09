@@ -1,3 +1,9 @@
+Release 4.4.4 (09/05/2019)
+=========================
+
+### Hotfix:
+- Improves visit detection on Android Pie devices
+
 Release 4.4.3 (07/05/2019)
 =========================
 
