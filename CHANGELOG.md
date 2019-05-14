@@ -1,3 +1,9 @@
+Release 4.4.5 (14/05/2019)
+=========================
+
+### Hotfix:
+- Removes unused test dependencies from the POM file
+
 Release 4.4.4 (09/05/2019)
 =========================
 
