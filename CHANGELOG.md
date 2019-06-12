@@ -1,3 +1,12 @@
+Release 4.5.0 (12/06/2019)
+=========================
+
+### Features:
+- Improves SDK initialization time
+
+### Fixes:
+- Fixes a compatibility issue with gradle 5.1.1
+
 Release 4.4.5 (14/05/2019)
 =========================
 
