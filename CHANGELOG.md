@@ -1,3 +1,9 @@
+Release 4.5.1 (26/06/2019)
+==========================
+
+### Hotfix:
+- Fixes SDK instantiation error when not initialized properly
+
 Release 4.5.0 (12/06/2019)
 =========================
 
