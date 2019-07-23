@@ -1,3 +1,9 @@
+Release 4.5.3 (23/07/2019)
+==========================
+
+### Fixes:
+- Fixes bug during device registration
+
 Release 4.5.2 (04/07/2019)
 ==========================
 
