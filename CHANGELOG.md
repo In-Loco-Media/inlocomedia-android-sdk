@@ -1,3 +1,13 @@
+Release 4.6.0 (16/09/2019)
+==========================
+
+### Features:
+- Improves SDK security and stability
+
+### Fixes:
+- Fixes bug that prevented SDK initialization if any public method is called before init
+- Fixes core proguard consumer file
+
 Release 4.5.3 (23/07/2019)
 ==========================
 
