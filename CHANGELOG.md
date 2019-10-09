@@ -1,3 +1,9 @@
+Release 4.6.1 (09/10/2019)
+==========================
+
+### Hotfix:
+- Fixes bug affecting the correct SDK operation on Android KitKat and older versions
+
 Release 4.6.0 (16/09/2019)
 ==========================
 
