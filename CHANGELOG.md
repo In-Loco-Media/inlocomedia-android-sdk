@@ -1,3 +1,11 @@
+Release 4.7.0 (11/11/2019)
+==========================
+
+### Features:
+- Adds check-in event registration
+- Adds localized event registration
+- Adds manual registration of clicks and impressions for notifications
+
 Release 4.6.1 (09/10/2019)
 ==========================
 
