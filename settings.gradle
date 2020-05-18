@@ -1,2 +1,0 @@
-include ':inlocomedia-ads-sample'
-project(":inlocomedia-ads-sample").projectDir = new File("samples/inlocomedia-ads-sample")
